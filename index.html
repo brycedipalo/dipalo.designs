@@ -4,235 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cleaning Services</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .hero {
-            text-align: center;
-            padding: 50px 20px;
-            background-color: #f4f4f4;
-        }
-        .hero h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        .hero p {
-            margin: 10px 0 0;
-            font-size: 1.2em;
-            color: #555;
-        }
-        .services {
-            padding: 20px;
-            background-color: #fff;
-            text-align: center;
-        }
-        .services h2 {
-            margin-bottom: 20px;
-            font-size: 2em;
-        }
-        .service-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 80%;
-            margin: 0 auto 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-        .service-container img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .service-description {
-            padding: 15px;
-            text-align: center;
-        }
-        .service-description h3 {
-            margin: 0;
-            font-size: 1.5em;
-        }
-        .service-description p {
-            margin: 10px 0;
-            color: #777;
-        }
-        .testimonials {
-            padding: 20px;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        .testimonials h2 {
-            margin-bottom: 20px;
-            font-size: 2em;
-        }
-        .testimonial {
-            display: none;
-            text-align: center;
-            margin: 0 auto;
-            max-width: 80%;
-        }
-        .testimonial img {
-            width: 75px;
-            height: auto;
-            margin-bottom: 10px;
-        }
-        .testimonial p {
-            margin: 10px 0;
-            font-size: 1.2em;
-            color: #333;
-        }
-        .testimonial span {
-            display: block;
-            margin-top: 5px;
-            color: #666;
-        }
-        .carousel-controls {
-            margin-top: 10px;
-        }
-        .carousel-controls button {
-            background-color: #ddd;
-            border: none;
-            border-radius: 5px;
-            padding: 10px;
-            cursor: pointer;
-            font-size: 1.2em;
-            margin: 0 5px;
-        }
-        /* Fixed Request Quote Button */
-        #fixed-quote-button {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background-color: #2b7a78; /* Color from your old site */
-            color: #ffffff;
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-weight: bold;
-            font-size: 16px;
-            z-index: 1000;
-            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        #fixed-quote-button a {
-            text-decoration: none;
-            color: #ffffff;
-        }
-        #fixed-quote-button:hover {
-            background-color: #3aafa9;
-            transform: scale(1.1);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        /* Why Choose Us Section */
-        .why-choose-us {
-            padding: 50px 20px;
-            background-color: #ffffff;
-            text-align: center;
-        }
-        .why-choose-us h2 {
-            margin-bottom: 20px;
-            font-size: 2em;
-        }
-        .why-choose-us .value-propositions {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        }
-        .why-choose-us .value-propositions .value-proposition {
-            max-width: 600px;
-            padding: 20px;
-            background-color: #f4f4f4;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .why-choose-us .value-propositions .value-proposition h3 {
-            margin-top: 0;
-            font-size: 1.5em;
-        }
-        .why-choose-us .value-propositions .value-proposition p {
-            margin: 10px 0;
-            color: #555;
-        }
-        /* Contact Section */
-        #contact {
-            padding: 50px 20px;
-            background-color: #ffffff;
-        }
-        .contact-container {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .contact-info .link {
-            display: block;
-            color: #2b7a78;
-            margin: 10px 0;
-            font-size: 18px;
-            text-decoration: none;
-        }
-        .contact-info i {
-            margin-right: 10px;
-        }
-        form {
-            background-color: #f4f4f4;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 20px;
-            max-width: 600px; /* Adjust this to set the maximum width of the form */
-            margin: 0 auto; /* Center the form horizontally */
-            box-sizing: border-box;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box; /* Include padding and border in element’s total width */
-        }
-        button[type="submit"] {
-            background-color: #2b7a78;
-            color: #ffffff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        button[type="submit"]:hover {
-            background-color: #3aafa9;
-        }
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            #fixed-quote-button {
-                padding: 8px 16px;
-                font-size: 14px;
-            }
-            .hero h1 {
-                font-size: 28px;
-            }
-            .hero p {
-                font-size: 20px;
-            }
-            .why-choose-us .value-propositions {
-                flex-direction: column;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/4f4f3b0c03.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+        <a href="https://example.com"><img src="https://images.pexels.com/photos/262547/pexels-photo-262547.jpeg" alt="Lake City Cleaners Logo" id="logo"></a>
+        <div class="header-content">
+            <p>Lake City Cleaners<br>Penticton BC</p>
+        </div>
+        <div class="contact-info">
+            <a href="tel:+2504622280"><i class="fa-solid fa-phone"></i>250.462.2280</a>
+            <a href="mailto:info@lakecitycleaners.ca"><i class="fa-regular fa-envelope"></i>info@lakecitycleaners.ca</a>
+        </div>
+    </header>
+    
+    
+    
+
     <div id="fixed-quote-button">
         <a href="#contact">Request a Quote</a>
     </div>
@@ -240,13 +29,13 @@
     <div class="hero">
         <h1>Professional Cleaning for Homes and Senior Living Spaces</h1>
         <p>Exceptional Service That Cares for Your Home and Your Loved Ones</p>
-        <a href="#services" class="button">Learn More</a>
+        <a href="#contact" class="cta-button">Get a Free Quote</a>
     </div>
 
     <div class="services">
         <h2>Our Services</h2>
         <div class="service-container">
-            <img src="https://images.pexels.com/photos/6195125/pexels-photo-6195125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Weekly & Bi-weekly Cleaning">
+            <img src="/images/weekly-house-clean-Penticton.jpg" alt="Weekly & Bi-weekly Cleaning">
             <div class="service-description">
                 <h3>Weekly & Bi-weekly Cleaning</h3>
                 <p>Regular cleaning to keep your home spotless.</p>
@@ -278,25 +67,7 @@
             </div>
         </div>
     </div>
-    
-    <div class="why-choose-us">
-        <h2>Why Choose Us</h2>
-        <div class="value-propositions">
-            <div class="value-proposition">
-                <h3>Reliable and Empathetic Care</h3>
-                <p>We understand the unique needs of senior clients and provide compassionate, specialized cleaning services. Our team is trained to offer extra care and attention, ensuring a safe and comfortable environment for your loved ones.</p>
-            </div>
-            <div class="value-proposition">
-                <h3>Professional and Trustworthy Staff</h3>
-                <p>Our team is trained, background-checked, and dedicated to providing high-quality service. You can trust us to treat your home with the utmost respect and care.</p>
-            </div>
-            <div class="value-proposition">
-                <h3>Efficient and Thorough Service</h3>
-                <p>Our experienced team works efficiently to deliver thorough cleaning results. We focus on every detail to ensure your home is spotless and comfortable.</p>
-            </div>
-        </div>
-    </div>
-    
+
     <div class="testimonials">
         <h2>What Our Clients Say</h2>
         <div class="testimonial">
@@ -319,24 +90,17 @@
             <button class="next">&gt;</button>
         </div>
     </div>
-    
+
     <div id="contact">
         <div class="contact-container">
             <h2>Contact Us</h2>
             <div class="contact-info">
-                <div class="link">
-                    <a href="tel:+2504622280">
-                        <i class="fa-solid fa-phone"></i>250.462.2280
-                    </a>
-                </div>
-                <div class="link">
-                    <a href="mailto:info@lakecitycleaners.ca" target="_blank">
-                        <i class="fa-regular fa-envelope"></i>info@lakecitycleaners.ca
-                    </a>
-                </div>
+                <p>Lake City Cleaners<br>Penticton, BC</p>
+                <a href="tel:+2504622280"><i class="fa-solid fa-phone"></i>250.462.2280</a>
+                <a href="mailto:info@lakecitycleaners.ca"><i class="fa-regular fa-envelope"></i>info@lakecitycleaners.ca</a>
             </div>
             <form id="form" action="https://formsubmit.co/8451044cd0f1200bdd1513845448b82d" method="POST">
-                <input type="hidden" name="_cc" value="dipalo.creativo@gmail.co.com"> 
+                <input type="hidden" name="_cc" value="dipalo.creativo@gmail.co.com">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
@@ -353,38 +117,59 @@
             </form>
         </div>
     </div>
-    
+
+    <footer>
+        <p>Lake City Cleaners<br>Penticton, BC</p>
+        <a href="tel:+2504622280">250.462.2280</a>
+        <a href="mailto:info@lakecitycleaners.ca">info@lakecitycleaners.ca</a>
+    </footer>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const testimonials = document.querySelectorAll('.testimonial');
             const prevButton = document.querySelector('.prev');
             const nextButton = document.querySelector('.next');
             let currentIndex = 0;
-    
+
             function showTestimonial(index) {
                 testimonials.forEach((testimonial, i) => {
                     testimonial.style.display = i === index ? 'block' : 'none';
                 });
             }
-    
+
             function showNext() {
                 currentIndex = (currentIndex + 1) % testimonials.length;
                 showTestimonial(currentIndex);
             }
-    
+
             function showPrev() {
                 currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
                 showTestimonial(currentIndex);
             }
-    
+
             prevButton.addEventListener('click', showPrev);
             nextButton.addEventListener('click', showNext);
-    
+
             showTestimonial(currentIndex);
         });
+
+        document.addEventListener('scroll', function () {
+            const requestQuoteButton = document.getElementById('fixed-quote-button');
+            if (window.scrollY > document.querySelector('.hero').offsetHeight) {
+                requestQuoteButton.style.display = 'block';
+            } else {
+                requestQuoteButton.style.display = 'none';
+            }
+        });
+
+        const header = document.querySelector('header');
+        const requestQuoteButton = document.getElementById('fixed-quote-button');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY < header.offsetHeight) {
+                requestQuoteButton.style.display = 'none';
+            }
+        });
     </script>
-    
-
-
 </body>
 </html>

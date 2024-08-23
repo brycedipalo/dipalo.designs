@@ -1,0 +1,323 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+    position: relative;
+    z-index: 1000;
+}
+header img {
+    height: 50px;
+}
+header .contact-info {
+    text-align: right;
+}
+header .contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+header .contact-info a:hover {
+    text-decoration: underline;
+}
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+.hero h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+.hero p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    color: #555;
+}
+.hero a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+.hero a:hover {
+    background-color: #0056b3;
+}
+.services {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+.services h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+.service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.service-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.service-description {
+    padding: 15px;
+    text-align: center;
+}
+.service-description h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+.service-description p {
+    margin: 10px 0;
+    color: #777;
+}
+.testimonials {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+.testimonials h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+.testimonial {
+    display: none;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 80%;
+}
+.testimonial img {
+    width: 75px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.testimonial p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+.testimonial span {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+}
+.carousel-controls {
+    margin-top: 10px;
+}
+.carousel-controls button {
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 0 5px;
+}
+#fixed-quote-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: none; /* Initially hidden */
+}
+#fixed-quote-button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+#fixed-quote-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#contact {
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contact-info .link {
+    display: block;
+    color: #007bff;
+    margin: 10px 0;
+    font-size: 18px;
+    text-decoration: none;
+}
+.contact-info i {
+    margin-right: 10px;
+}
+form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+button[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+footer {
+    padding: 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    #fixed-quote-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .hero h1 {
+        font-size: 28px;
+    }
+    .hero p {
+        font-size: 20px;
+    }
+}
+
+/* Desktop View Adjustments */
+@media (min-width: 769px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #007bff; /* Blue color */
+        color: #fff;
+        position: relative;
+        z-index: 1000;
+    }
+
+    #logo {
+        height: 50px;
+    }
+
+    .header-content {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .header-content p {
+        margin: 0;
+        font-size: 16px; /* Adjust as needed */
+    }
+
+    .contact-info {
+        text-align: right;
+    }
+
+    .contact-info a {
+        display: block;
+        margin: 5px 0;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .contact-info a:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Existing styles... */
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    header {
+        display: block; /* Stack items vertically */
+        text-align: center; /* Center align content */
+        padding: 10px 20px;
+        background-color: #007bff; /* Blue color */
+        color: #fff;
+    }
+
+    #logo {
+        display: block; /* Ensure logo is a block element */
+        margin: 0 auto; /* Center the logo */
+        height: 50px; /* Adjust height as needed */
+    }
+
+    .header-content {
+        margin: 10px 0; /* Space between logo and business name */
+    }
+
+    .contact-info {
+        display: flex; /* Flex container for horizontal alignment */
+        flex-direction: column; /* Stack phone and email vertically */
+        align-items: center; /* Center align contact info */
+    }
+
+    .contact-info a {
+        display: block;
+        margin: 5px 0;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .contact-info a:hover {
+        text-decoration: underline;
+    }
+}
+
