@@ -225,64 +225,39 @@ footer a:hover {
     text-decoration: underline;
 }
 
-
-@media (max-width: 768px) {
-    #fixed-quote-button {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-    .hero h1 {
-        font-size: 28px;
-    }
-    .hero p {
-        font-size: 20px;
-    }
+/* Default Styles (Desktop) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
 }
-
-/* Desktop View Adjustments */
-@media (min-width: 769px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        background-color: #007bff; /* Blue color */
-        color: #fff;
-        position: relative;
-        z-index: 1000;
-    }
-
-    #logo {
-        height: 50px;
-    }
-
-    .header-content {
-        flex-grow: 1;
-        text-align: center;
-    }
-
-    .header-content p {
-        margin: 0;
-        font-size: 16px; /* Adjust as needed */
-    }
-
-    .contact-info {
-        text-align: right;
-    }
-
-    .contact-info a {
-        display: block;
-        margin: 5px 0;
-        color: #fff;
-        text-decoration: none;
-    }
-
-    .contact-info a:hover {
-        text-decoration: underline;
-    }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+    position: relative;
+    z-index: 1000;
 }
+header img {
+    height: 50px;
+}
+header .contact-info {
+    text-align: right;
+}
+header .contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+header .contact-info a:hover {
+    text-decoration: underline;
+}
+/* Other default styles... */
 
-/* Existing styles... */
 /* Mobile View Adjustments */
 @media (max-width: 768px) {
     header {
@@ -304,9 +279,11 @@ footer a:hover {
     }
 
     .contact-info {
-        display: flex; /* Flex container for horizontal alignment */
+        display: flex; /* Flex container for alignment */
         flex-direction: column; /* Stack phone and email vertically */
-        align-items: center; /* Center align contact info */
+        align-items: flex-start; /* Align items to the start (left) */
+        margin: 0 auto; /* Center contact info */
+        text-align: left; /* Align text to the left */
     }
 
     .contact-info a {
@@ -319,5 +296,21 @@ footer a:hover {
     .contact-info a:hover {
         text-decoration: underline;
     }
-}
 
+    /* Contact Us Section */
+    #contact {
+        padding: 50px 20px; /* Maintain padding for the section */
+        background-color: #ffffff; /* Ensure background is white */
+    }
+
+    .contact-container {
+        max-width: 100%; /* Ensure full width usage */
+        margin: 0 auto; /* Center the container */
+        text-align: left; /* Align text to the left */
+    }
+
+    .contact-info p,
+    .contact-info a {
+        margin: 10px 0; /* Adjust margin for spacing */
+    }
+}
