@@ -1,3 +1,12 @@
+
+
+:root {
+    --baseColor: #F2F8FF;
+    --mainColor: #59ACFF;
+    --accentColor: #198CFF;
+}
+
+/* Default Styles (Desktop) */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -10,10 +19,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #007bff; /* Blue color */
-    color: #fff;
+    background: linear-gradient(to right, #fff 200px ,#59acff);
     position: relative;
+    color: #000;
     z-index: 1000;
+       
 }
 header img {
     height: 50px;
@@ -21,39 +31,55 @@ header img {
 header .contact-info {
     text-align: right;
 }
-header .contact-info a {
-    color: #fff;
+header .contact-info a,
+header .header-content a
+{
+    color: #000;
     text-decoration: none;
 }
 header .contact-info a:hover {
     text-decoration: underline;
 }
-.hero {
+
+
+.hero-old {
     text-align: center;
-    padding: 50px 20px;
-    background-color: #f4f4f4;
+    padding: 200px 20px;
+    /* 
+    background-image: url("/images/hero2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
 }
 .hero h1 {
     margin: 0;
     font-size: 2.5em;
-}
+        font: 800 40px Arial;
+        -webkit-text-fill-color: whitesmoke;
+        -webkit-text-stroke: 1px;
+      }
+
 .hero p {
     margin: 10px 0 0;
     font-size: 1.2em;
-    color: #555;
+    font: 800 25px;
+    -webkit-text-stroke-color: black ;
+    -webkit-text-fill-color: whitesmoke;
+    -webkit-text-stroke: 1px;
 }
-.hero a {
+.hero-quote {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: var(--accentColor) ;             /*#007bff;*/
     color: #fff;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.4em;
     border-radius: 5px;
 }
 .hero a:hover {
-    background-color: #0056b3;
+    background-color: #007bff;           /* #0056b3;*/
 }
 .services {
     padding: 20px;
@@ -68,7 +94,7 @@ header .contact-info a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 80%;
+    max-width: 95%;
     margin: 0 auto 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -78,6 +104,7 @@ header .contact-info a:hover {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    
 }
 .service-description {
     padding: 15px;
@@ -93,7 +120,7 @@ header .contact-info a:hover {
 }
 .testimonials {
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: var(--baseColor);
     text-align: center;
 }
 .testimonials h2 {
@@ -200,7 +227,7 @@ form {
     box-sizing: border-box;
 }
 button[type="submit"] {
-    background-color: #007bff;
+    background-color: var(--accentColor);
     color: #ffffff;
     padding: 10px 20px;
     border: none;
@@ -209,87 +236,63 @@ button[type="submit"] {
     font-size: 16px;
 }
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #007bff; 
 }
 footer {
+    
     padding: 20px;
-    background-color: #007bff;
-    color: #fff;
+    background: linear-gradient(to right top, #fff, #59acff);
+    color: #000;
     text-align: center;
 }
+
+.footer-contact{
+    display: flex;
+    justify-content: space-around;
+}
+
 footer a {
-    color: #fff;
+    
     text-decoration: none;
+    
 }
 footer a:hover {
     text-decoration: underline;
 }
 
-/* Default Styles (Desktop) */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #333;
-}
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #007bff; /* Blue color */
-    color: #fff;
-    position: relative;
-    z-index: 1000;
-}
-header img {
-    height: 50px;
-}
-header .contact-info {
-    text-align: right;
-}
-header .contact-info a {
-    color: #fff;
-    text-decoration: none;
-}
-header .contact-info a:hover {
-    text-decoration: underline;
-}
-/* Other default styles... */
-
 /* Mobile View Adjustments */
 @media (max-width: 768px) {
     header {
-        display: block; /* Stack items vertically */
-        text-align: center; /* Center align content */
+
         padding: 10px 20px;
-        background-color: #007bff; /* Blue color */
-        color: #fff;
+        background-color: var(--mainColor) ; /* Blue color */
+        color: #000000;
     }
 
     #logo {
         display: block; /* Ensure logo is a block element */
-        margin: 0 auto; /* Center the logo */
+        /*margin: 0 auto; /* Center the logo */
         height: 50px; /* Adjust height as needed */
     }
 
     .header-content {
         margin: 10px 0; /* Space between logo and business name */
+        color: #000;
+        text-align: center;
+
     }
 
     .contact-info {
-        display: flex; /* Flex container for alignment */
-        flex-direction: column; /* Stack phone and email vertically */
-        align-items: flex-start; /* Align items to the start (left) */
-        margin: 0 auto; /* Center contact info */
-        text-align: left; /* Align text to the left */
+        /*display: flex; /* Flex container for alignment */
+      /*  flex-direction: column; /* Stack phone and email vertically */
+        /*align-items: flex-start; /* Align items to the start (left) */
+        /* margin: 0 auto; /* Center contact info */
+        /*text-align: center;
     }
 
     .contact-info a {
         display: block;
         margin: 5px 0;
-        color: #fff;
         text-decoration: none;
     }
 
@@ -304,7 +307,7 @@ header .contact-info a:hover {
     }
 
     .contact-container {
-        max-width: 100%; /* Ensure full width usage */
+       /* max-width: 100%; /* Ensure full width usage */
         margin: 0 auto; /* Center the container */
         text-align: left; /* Align text to the left */
     }
@@ -314,3 +317,73 @@ header .contact-info a:hover {
         margin: 10px 0; /* Adjust margin for spacing */
     }
 }
+
+
+/* Responsive Design - Media Queries */
+@media only screen and (max-width: 768px) {
+
+
+
+    .services .service-container {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .services .service-container {
+        flex-direction: column;
+    }
+    .hero h1 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 1.1em;
+    }
+    .hero a {
+        font-size: 1em;
+    }
+    footer {
+        font-size: 14px;
+    }
+   /* #fixed-quote-button {
+        top: auto;
+        bottom: 20px;
+        right: 20px;
+    }
+    */
+    }
+
+@media only screen and (max-width: 480px) {
+
+    
+
+    header img {
+        height: 40px;
+    }
+    .hero h1 {
+        font-size: 1.8em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+    .services h2 {
+        font-size: 1.8em;
+    }
+    .service-description h3 {
+        font-size: 1.4em;
+    }
+    .testimonial p {
+        font-size: 1em;
+    }
+    .carousel-controls button {
+        padding: 8px;
+        font-size: 1em;
+    }
+}
+
+
+
+/**
+placeId: 'ChIJjyC2LSrN2SgR513vDvhDbso', // Replace with your actual Place ID
+
+
+AIzaSyDmvUAOcqGA4fvj2ta8bplX3WzbCcH6xSU
+**/
