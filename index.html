@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cleaning Services</title>
+    <title>Lakecity Cleaners Penticton</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/4f4f3b0c03.js" crossorigin="anonymous"></script>
 
@@ -15,10 +15,10 @@
 </head>
 
 
-<body class="text-gray-800 antialiased">
+<body >
 
     <header>
-            <a href="https://example.com"><img src="https://brycedipalo.github.io/dipalo.designs/images/lakecitycleaners.png" alt="Lake City Cleaners Logo" id="logo"></a>      
+            <a href="https://example.com"><img src="/images/lakecitycleaners.png" alt="Lake City Cleaners Logo" id="logo"></a>      
             <div class="header-content">
                 <a href="tel:+2504622280"> <i class="fa-solid fa-phone"></i> 250.462.2280</a>
             </div>
@@ -56,7 +56,7 @@
     <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
         <div
             class="absolute top-0 w-full h-full bg-center bg-cover"
-            style='background-image: url("https://brycedipalo.github.io/dipalo.designs//images/hero2.jpg");'
+            style='background-image: url("/images/hero2.jpg");'
         >
         </div>
         <div class=" container relative mx-auto">
@@ -64,7 +64,7 @@
                 <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                     <div class="hero pr-12"  >
                         <h1 class="font-semibold text-5xl" data-aos="fade-up">
-                            Cleaning Services in Penticton
+                            Lakecity Cleaners Penticton
                         </h1>
                         <br>
                         <a href="#contact" class="hero-quote" data-aos="fade-in" data-aos-delay="1500">Get a Free Quote</a> 
@@ -81,8 +81,8 @@
             </svg>
         </div>
     </div>    
-<section class="pb-20 bg-gray-300 -mt-24">
-<div class="container mx-auto px-4">
+    <section class="pb-20 bg-gray-300 -mt-24">
+    <div class="container mx-auto px-4">
 
 
 
@@ -140,10 +140,9 @@
                 </blockquote>
             </div>
         </div>
+    </div>    
     </div>
-
-</div>
-
+    </section>
 
 
 
@@ -163,7 +162,7 @@
     <div class="services">
         <h2>Our Services</h2>
         <div class="service-container">
-            <img src="https://brycedipalo.github.io/dipalo.designs//images/vacum.jpg" alt="Weekly & Bi-weekly Cleaning" >
+            <img src="/images/vacum.jpg" alt="Weekly & Bi-weekly Cleaning" >
             <div class="service-description">
                 <h3>Weekly & Bi-weekly Cleaning</h3>
                 <p>Regular cleaning to keep your home spotless.</p>
@@ -246,8 +245,10 @@
         </div>
     </div>
 
-    <footer>
-        <p>Lake City Cleaners<br>Penticton, BC</p>
+    <footer class="footer">
+        <div class="footer-logo">
+            <a href="https://example.com"><img src="/images/lakecitycleaners.png" alt="Lake City Cleaners Logo"></a> 
+        </div>
         <div class="footer-contact">
             <a href="tel:+2504622280"><i class="fa-solid fa-phone"></i> 250.462.2280   </a> 
             <a href="mailto:info@lakecitycleaners.ca"><i class="fa-regular fa-envelope"></i> info@lakecitycleaners.ca</a>
@@ -296,21 +297,19 @@
 
         document.addEventListener('scroll', function () {
             const requestQuoteButton = document.getElementById('fixed-quote-button');
-            if (window.scrollY > document.querySelector('.hero').offsetHeight) {
+            requestQuoteButton.style.display = 'none'
+            if ((window.scrollY - document.querySelector('.hero').scrollHeight) > document.querySelector('.hero').scrollHeight 
+            && (window.innerHeight + window.pageYOffset + 250 ) < document.body.offsetHeight)
+            {
                 requestQuoteButton.style.display = 'block';
-            } else {
-                requestQuoteButton.style.display = 'none';
+        
+            }            
+            else {
+                requestQuoteButton.style.display = 'none'
             }
         });
 
-        const header = document.querySelector('header');
-        const requestQuoteButton = document.getElementById('fixed-quote-button');
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY < header.offsetHeight) {
-                requestQuoteButton.style.display = 'none';
-            }
-        });
+        
     </script>
 </body>
 </html>
