@@ -286,10 +286,10 @@ footer a:hover {
 
     }
     .services h3 {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     .services p{
-        font-size: 1em;
+        font-size: .9em;
     }
     .contact-info a {
         display: block;
@@ -334,10 +334,10 @@ footer a:hover {
         font-size: 1em;
     }
     .services h3 {
-        font-size: 1.2em;
+        font-size: 1em;
     }
     .services p {
-        font-size: 1em;
+        font-size: .8em;
     }
     .services img{
         min-width: 175px;
