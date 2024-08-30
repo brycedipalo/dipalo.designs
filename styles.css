@@ -42,16 +42,6 @@ header .contact-info a:hover {
 }
 
 
-.hero-old {
-    text-align: center;
-    padding: 200px 20px;
-    /* 
-    background-image: url("/images/hero2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    */
-}
 .hero h1 {
     margin: 0;
     font-size: 2.5em;
@@ -60,15 +50,23 @@ header .contact-info a:hover {
         -webkit-text-stroke: 1px;
       }
 
+.hero h2 {
+    margin: 0;
+    font-size: 2em;
+        font: 800 40px Arial;
+        -webkit-text-fill-color: whitesmoke;
+        -webkit-text-stroke: 1px;
+      }      
+
 .hero p {
     margin: 10px 0 0;
-    font-size: 1.2em;
-    font: 800 25px;
+    font-size: 2em;
+    font: 800 30px;
     -webkit-text-stroke-color: black ;
     -webkit-text-fill-color: whitesmoke;
     -webkit-text-stroke: 1px;
 }
-.hero-quote {
+.hero-quote {   
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -81,43 +79,21 @@ header .contact-info a:hover {
 .hero a:hover {
     background-color: #007bff;           /* #0056b3;*/
 }
-.services {
-    padding: 20px;
-    background-color: #fff;
-    text-align: center;
+.hero-services{
+    background-color: var(--accentColor) ;
+    color: var(--accentColor);
 }
-.services h2 {
-    margin-bottom: 20px;
+
+.services h3 {
     font-size: 2em;
 }
-.service-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 95%;
-    margin: 0 auto 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
+.services p {
+    font-size: 1em
 }
-.service-container img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    
-}
-.service-description {
-    padding: 15px;
-    text-align: center;
-}
-.service-description h3 {
-    margin: 0;
-    font-size: 1.5em;
-}
-.service-description p {
-    margin: 10px 0;
-    color: #777;
-}
+
+
+
+
 .testimonials {
     padding: 20px;
     background-color: var(--baseColor);
@@ -262,8 +238,13 @@ footer img {
 }
 
 footer {
-    padding: 20px;
-    background: linear-gradient(to bottom, #fff 70px, #59acff);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    padding-top: 0px;
+    min-height: 150px;
+    background: linear-gradient(to bottom, #fff 40px, #59acff);
     color: #000;
     text-align: center;
 }
@@ -304,15 +285,12 @@ footer a:hover {
         text-align: center;
 
     }
-
-    .contact-info {
-       /* display: flex; /* Flex container for alignment */
-      /*  flex-direction: column; /* Stack phone and email vertically */
-        /*align-items: flex-start; /* Align items to the start (left) */
-        /* margin: 0 auto; /* Center contact info */
-    /*    text-align: center; */
+    .services h3 {
+        font-size: 1.5em;
     }
-
+    .services p{
+        font-size: 1em;
+    }
     .contact-info a {
         display: block;
         margin: 5px 0;
@@ -342,37 +320,6 @@ footer a:hover {
 }
 
 
-/* Responsive Design - Media Queries */
-@media only screen and (max-width: 768px) {
-
-
-
-    .services .service-container {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-    .services .service-container {
-        flex-direction: column;
-    }
-    .hero h1 {
-        font-size: 2em;
-    }
-    .hero p {
-        font-size: 1.1em;
-    }
-    .hero a {
-        font-size: 1em;
-    }
-    footer {
-        font-size: 14px;
-    }
-   /* #fixed-quote-button {
-        top: auto;
-        bottom: 20px;
-        right: 20px;
-    }
-    */
-    }
 
 @media only screen and (max-width: 480px) {
 
@@ -382,17 +329,19 @@ footer a:hover {
     header img {
         height: 40px;
     }
-    .hero h1 {
-        font-size: 1.8em;
-    }
+    
     .hero p {
         font-size: 1em;
     }
-    .services h2 {
-        font-size: 1.8em;
+    .services h3 {
+        font-size: 1.2em;
     }
-    .service-description h3 {
-        font-size: 1.4em;
+    .services p {
+        font-size: 1em;
+    }
+    .services img{
+        min-width: 175px;
+     
     }
     .testimonial p {
         font-size: 1em;
@@ -402,12 +351,3 @@ footer a:hover {
         font-size: 1em;
     }
 }
-
-
-
-/**
-placeId: 'ChIJjyC2LSrN2SgR513vDvhDbso', // Replace with your actual Place ID
-
-
-AIzaSyDmvUAOcqGA4fvj2ta8bplX3WzbCcH6xSU
-**/
