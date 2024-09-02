@@ -20,7 +20,7 @@
 </head>
 <body >
     <header>
-        <a href="/index.html">
+        <a href="#contact.html">
             <img src="/dipalo.designs/images/lakecitycleaners.png"
                 alt="Lake City Cleaners Logo" id="logo">
         </a>      
@@ -227,7 +227,7 @@
     
     <footer class="footer">
         <div class="footer-logo">
-            <a href="https://example.com"><img src="/dipalo.designs/images/lakecitycleaners.png" alt="Lake City Cleaners Logo"></a> 
+            <a href="#contact"><img src="/dipalo.designs/images/lakecitycleaners.png" alt="Lake City Cleaners Logo"></a> 
         </div>
         <div class="footer-contact">
             <a href="tel:+2504622280"><i class="fa-solid fa-phone"></i> 250.462.2280   </a> 
@@ -292,56 +292,6 @@
             }
         });
     </script>
-
-
-<!--    
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const testimonials = document.querySelectorAll('.testimonial');
-            const prevButton = document.querySelector('.prev');
-            const nextButton = document.querySelector('.next');
-            let currentIndex = 0;
-
-            function showTestimonial(index) {
-                testimonials.forEach((testimonial, i) => {
-                    testimonial.style.display = i === index ? 'block' : 'none';
-                });
-            }
-
-            function showNext() {
-                currentIndex = (currentIndex + 1) % testimonials.length;
-                showTestimonial(currentIndex);
-            }
-
-            function showPrev() {
-                currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
-                showTestimonial(currentIndex);
-            }
-
-            prevButton.addEventListener('click', showPrev);
-            nextButton.addEventListener('click', showNext);
-            
-            showTestimonial(currentIndex);
-        });
-        
-        document.addEventListener('scroll', function () {
-            const requestQuoteButton = document.getElementById('fixed-quote-button');
-            requestQuoteButton.style.display = 'none'
-            if ((window.scrollY - document.querySelector('.hero').scrollHeight) > document.querySelector('.hero').scrollHeight 
-            && (window.innerHeight + window.pageYOffset + 250 ) < document.body.offsetHeight)
-            {
-                requestQuoteButton.style.display = 'block';
-        
-            }            
-            else {
-                requestQuoteButton.style.display = 'none'
-            }
-        });  
-    </script>
-    -->
-
-
-
 
 </body>
 </html>
