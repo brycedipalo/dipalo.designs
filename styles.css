@@ -44,28 +44,20 @@ header .contact-info a:hover {
 
 .hero h1 {
     margin: 0;
-    font-size: 2.5em;
-        font: 800 40px Arial;
+    
+        font: 800 2.1em Arial;
         -webkit-text-fill-color: whitesmoke;
         -webkit-text-stroke: 1px;
       }
 
 .hero h2 {
     margin: 0;
-    font-size: 2em;
-        font: 800 40px Arial;
+    
+        font: 800 1.8em Arial;
         -webkit-text-fill-color: whitesmoke;
         -webkit-text-stroke: 1px;
       }      
 
-.hero p {
-    margin: 10px 0 0;
-    font-size: 2em;
-    font: 800 30px;
-    -webkit-text-stroke-color: black ;
-    -webkit-text-fill-color: whitesmoke;
-    -webkit-text-stroke: 1px;
-}
 .hero-quote {   
     display: inline-block;
     margin-top: 20px;
@@ -322,14 +314,17 @@ footer a:hover {
 
 
 @media only screen and (max-width: 480px) {
-
-    footer img {
-        height: 40px;
-    }
+    
     header img {
         height: 40px;
     }
-    
+    footer img {
+        height: 40px;
+    }
+    .footer-contact{
+        display: flex;
+        flex-direction: column;
+    }
     .hero p {
         font-size: 1em;
     }
