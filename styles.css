@@ -40,8 +40,9 @@ header .header-content a
 header .contact-info a:hover {
     text-decoration: underline;
 }
-
-
+.hero-image{
+    background-image: url("/dipalo.designs/images/penticton-landscape.png");
+}
 .hero h1 {
     margin: 0;
     
@@ -264,7 +265,6 @@ footer a:hover {
         background-color: var(--mainColor) ; /* Blue color */
         color: #000000;
     }
-
     #logo {
         display: block; /* Ensure logo is a block element */
         /*margin: 0 auto; /* Center the logo */
@@ -276,6 +276,9 @@ footer a:hover {
         color: #000;
         text-align: center;
 
+    }
+        .hero-image{
+        background-image: url("/dipalo.designs/images/hero2.jpg");
     }
     .services h3 {
         font-size: 1.2em;
