@@ -13,127 +13,256 @@
 		<link rel="manifest" href="favicon/site.webmanifest">
 		<!--/favicon--> 
 		<title>Trubuild Construction - Penticton BC - Home Renovation Services</title>
+		<!--font awsome-->
 		<script src="https://kit.fontawesome.com/4f4f3b0c03.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		<!--tailwind -->
 		<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 		<!--AOS  -->
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<!-- Google Fonts-->
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+		<style>
+			.font-roboto { font-family: 'Roboto', sans-serif;}
+			h1,h2,h3,h4,h5,h6,li { font-family: 'Poppins', sans-serif;}
+			</style>
+			<!--	
+			-->
+		  
 	</head>
-	<body class="text-gray-800 antialiased">
-		<!-- Wrapper with background image -->
-		<div class="relative">
-			<!-- Header positioned absolutely on top of the background -->
-			<header class="flex flex-col absolute top-0 left-0 w-full bg-opacity-70 text-white ">
-				<!--top half header with contacts/nav menu left and socials right--->
-				<div class="bg-black w-full flex items-center justify-between px-2 py-3">
-					
-					<div class="container px-4 mx-auto flex items-center justify-between">
-						<!-- Contact info container, left side of top header  (contact info and oldhamberger menu) -->
-						<div class="w-full relative flex justify-between w-auto static block justify-start">
-							<!--left side-top header-contact info -->
-							<div class="flex flex-col md:flex-row ">  
-								<a class="text-sm font-semibold inline-block mr-4 py-2 whitespac e-nowrap text-white hover:text-gray-300"
-								href="tel:+2504870748">
-									<i class="fa-solid fa-phone"></i>
-									250-487-0748
-								</a>
-								<a class="text-sm font-semibold leading-relaxed inline-block mr-4 py-2 whitespac e-nowrap text-white hover:text-gray-300"
-								href="href="mailto:trubuildcon@gmail.com">
-									<i class="fa-regular fa-envelope"></i>
-									trubuildcon@gmail.com
-								</a>
-								<div class="text-sm font-semibold leading-relaxed inline-block mr-4 py-2 whitespac e-nowrap text-white hover:text-gray-300">
-									<i class="fa-solid fa-location-dot"></i>
-									Penticton BC
+	<body class="text-gray-800 antialiased ">
+		<!-- HERO Wrapper with background image -->
+		<div class="relative">	
+			<!-- Background Image Section -->
+			<div class= "h-screen bg-cover bg-center" style="background-image: url('images/showcase.jpg');">
+				<!--Background Image Cover -->
+				<div class= "h-screen bg-cover bg-center bg-black bg-opacity-20 flex-col" >
+					<!-- Header positioned absolutely on top of the background -->
+					<div class="flex flex-col absolute top-0 left-0 w-full text-white ">
+						<!--top half header with contacts/nav menu left and socials right--->
+						<div class="bg-black w-full flex items-center justify-between px-2 py-3">
+							
+							<div class="container px-4 mx-auto flex items-center justify-between">
+								<!-- Contact info container, left side of top header  (contact info and oldhamberger menu) -->
+								<div class="w-full relative flex justify-between w-auto static block justify-start">
+									<!--left side-top header-contact info -->
+									<div class="flex flex-col md:flex-row ">  
+										<a class="text-sm font-semibold inline-block mr-4 py-2 whitespac e-nowrap text-white hover:text-gray-300"
+										href="tel:+2504870748">
+											<i class="fa-solid fa-phone"></i>
+											250-487-0748
+										</a>
+										<a class="text-sm font-semibold leading-relaxed inline-block mr-4 py-2 whitespac e-nowrap text-white hover:text-gray-300"
+										href="href="mailto:trubuildcon@gmail.com">
+											<i class="fa-regular fa-envelope"></i>
+											trubuildcon@gmail.com
+										</a>
+										<div class="text-sm font-semibold leading-relaxed inline-block mr-4 py-2 whitespac e-nowrap text-white hover:text-gray-300">
+											<i class="fa-solid fa-location-dot"></i>
+											Penticton BC
+										</div>
+									</div>
+
 								</div>
+								<!-- Socials Container, right side of top header -->
+								<div class="flex flex-grow items-center bg-transparent shadow-none ">
+
+									<ul class="flex flex-col md:flex-row list-none md:ml-auto">
+										<li class="flex items-center">
+											<a class="px-3 lg:py-4 py-2 flex items-center text-xs uppercase font-bold hover:text-gray-300" 
+											href="#pablo">
+												<i class=" fab fa-facebook text-lg leading-lg"></i>
+												<span class="inline-block ml-2">Like</span>
+											</a>
+										</li>
+										<li class="flex items-center">
+											<a class="px-3 lg:py-4 py-2 flex items-center text-xs uppercase font-bold hover:text-gray-300" 
+											href="#pablo">
+												<i class=" fab fa-x-twitter text-lg leading-lg"></i>
+												<span class="inline-block ml-2">Tweet</span>
+											</a>
+										</li>
+										<li class="flex items-center">
+											<a class="px-3 lg:py-4 py-2 flex items-center text-xs uppercase font-bold hover:text-gray-300" 
+											href="#pablo">
+												<i class=" fab fa-instagram text-lg leading-lg"></i>
+												<span class="inline-block ml-2">Share</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+
 							</div>
-
 						</div>
-						<!-- Socials Container, right side of top header -->
-						<div class="flex flex-grow items-center bg-transparent shadow-none ">
-
-							<ul class="flex flex-col md:flex-row list-none md:ml-auto">
-								<li class="flex items-center">
-									<a class="px-3 lg:py-4 py-2 flex items-center text-xs uppercase font-bold hover:text-gray-300" 
-									href="#pablo">
-										<i class=" fab fa-facebook text-lg leading-lg"></i>
-										<span class="inline-block ml-2">Like</span>
-									</a>
-								</li>
-								<li class="flex items-center">
-									<a class="px-3 lg:py-4 py-2 flex items-center text-xs uppercase font-bold hover:text-gray-300" 
-									href="#pablo">
-										<i class=" fab fa-x-twitter text-lg leading-lg"></i>
-										<span class="inline-block ml-2">Tweet</span>
-									</a>
-								</li>
-								<li class="flex items-center">
-									<a class="px-3 lg:py-4 py-2 flex items-center text-xs uppercase font-bold hover:text-gray-300" 
-									href="#pablo">
-										<i class=" fab fa-instagram text-lg leading-lg"></i>
-										<span class="inline-block ml-2">Share</span>
-									</a>
-								</li>
-							</ul>
+						<!-- lower header and dropdown menubackgorund -->
+						<div class=" bg-black bg-opacity-50 ">
+								<!-- flex container with logo and navigation -->	
+								<nav class="flex flex-row items-center justify-between px-2 py-3">						
+									<!--logo with link-->
+								
+										<a href="#contact" class="ml-2 w-40">
+											<img src="images/trubuild-rectangle-logo-555x1500.jpg"
+											alt="Trubuild Construction - Penticton BC - Home Renovation Services Logo"
+											style="border-radius: 0.5rem;">
+										</a>
+								
+										
+									
+									<!--  navigation-->
+									<!-- Mobile menu button and Desktop Nav-->
+									<div class="mr-4"> 
+										<!-- Mobile menu butotn -->
+										<button
+										class="md:hidden cursor-pointer text-white text-xl leading-none p-3 border
+										border-solid bg-transparent block lg:hidden outline-none 
+										focus:outline-none" type="button" onclick="toggleNavmenu()"
+										> Menu
+										</button>
+										<!--Medium screens and above display Nav menu	-->
+										<ul class="md:flex flex-row text-lg hidden">
+											<li class="mr-4"><a href="#home">HOME</a></li>
+											<li class="mr-4"><a href="#services">SERVICES</a></li>
+											<li class="mr-4"><a href="#gallery">GALLERY</a></li>
+											<li class="mr-4"><a href="#gallery">ABOUT</a></li>
+											<li class="mr-4"><a href="#gallery">CONTACT</a></li>
+										</ul>							
+									</div>								
+								<!-- end of nav & logo flex container-->
+								</nav>
+								<!--dropdown menu-->
+								<div id="navmenu" class="flex justify-end hidden ">
+									<ul class="flex flex-col font-bold">
+										<li class="mr-4 p-2 text-right"><a href="#home">Home</a></li>
+										<li class="mr-4 p-2 text-right"><a href="#services">Services</a></li>
+										<li class="mr-4 p-2 text-right"><a href="#gallery">Gallery</a></li>
+										<li class="mr-4 p-2 text-right"><a href="#about">About</a></li>
+										<li class="mr-4 p-2 text-right"><a href="#contact">Contact</a></li>
+									</ul>
+								</div>
+						<!-- end of lower header background container-->							
 						</div>
+					
+					<!--Background Content ontop of image-->
+					<div id="HeroContent" class=" flex flex-col items-center justify-center text-white ">
 
+						<h1 class=" text-white text-bold pt-12 text-4xl text-center">High-Quality</h1>
+						<h1 class=" text-white text-bold text-4xl">Renovations</h1>
+						<h3 class=" text-white text-bold pt-4 text-2xl text-center">Trusted Professionals</h3>
 					</div>
 				</div>
-				<!-- lower header and dropdown menubackgorund -->
-				<div class=" bg-black bg-opacity-75 ">
-						<!-- flex container with logo and navigation -->	
-						<nav class="flex flex-row items-center justify-between px-2 py-3">
-							<!--Round logo with link -->
-							<a href="#contact" class="ml-8">
-								<img src="images/Trubuild-Round-Logo-1000.png"
-								alt="Trubuild Construction - Penticton BC - Home Renovation Services Logo"
-								class="w-24 sm:w-36 md:w-36 lg:w-40 min-w-[100px]">
-							</a>
-							<!--  navigation-->
-							<!-- Mobile menu button and Desktop Nav-->
-							<div class="mr-8"> 
-								<!-- Mobile menu butotn -->
-								<button
-								class="md:hidden cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-								type="button"
-								onclick="toggleNavmenu('navmenu')"
-								>
-								<i class="text-3xl text-white fas fa-bars"></i>
-								</button>
-								<!--Medium screens and above display Nav menu	-->
-								<ul class="md:flex flex-row hidden">
-								<li class="mr-4">HOME</li>
-								<li class="mr-4">SERVICES</li>
-								<li class="mr-4">GALLERY</li>
-								<li class="mr-4">ABOUT</li>
-								<li class="mr-4">CONTACT</li>
-								</ul>							
-							</div>								
-						<!-- end of nav & logo flex container-->
-						</nav>
-						<!--dropdown menu-->
-						<div id="navmenu" class="flex justify-end hidden">
-							<ul class="flex flex-col">
-								<li class="mr-4 p-2">HOME</li>
-								<li class="mr-4 p-2">SERVICES</li>
-								<li class="mr-4 p-2">GALLERY</li>
-								<li class="mr-4 p-2">ABOUT</li>
-								<li class="mr-4 p-2">CONTACT</li>
-							</ul>
-						</div>
-				<!-- end of lower header background container-->							
-				</div>
-			</header>
-			<!-- Background Image Section -->
-			<div class="h-screen bg-cover bg-center" style="background-image: url('images/showcase.jpg');">
-				<!--Background Content ontop of image-->
-				<div id="HeroContent" class="h-full flex items-center justify-center text-white">
-					<h2 class="text-4xl font-bold">Hero Content</h2>
+
+					
+									
 				</div>
 			</div>
 		<!-- end of background wrapper-->	
 		</div>
-	
+		<!--Angled transition strip-->
+		<div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden" style="height: 70px;">
+            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                <polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+		<!--About us Section-->
+		<section>
+			<!-- About us Section wrapper-->
+			<div class="flex flex-col p-5">
+				<!-- Top Part for large displays container -->
+				<div class="flex flex-col lg:flex-row lg:items-center pt-20">
+					<!-- Image Container -->
+					<div class="lg:w-1/2 p-2" data-aos="flip-right">
+					<img
+						alt="Home renovation worker"
+						class="rounded-lg shadow-lg"
+						src="images/About-us.jpg"
+					/>
+					</div>
+					<!-- container for right side on large display and above to keep first p below logo and next to img-->
+					<div class="lg:items-start p-5 "data-aos="fade-left" data-aos-delay="1000">  
+						<!-- Title Block with logo-->
+						<div class="flex items-end">
+							<img
+							class="p-2 shadow-lg rounded-full bg-gray-200"
+							src="images/Round-logo.png"
+							width="100"
+							/>
+							<div class="pl-2 flex flex-col">
+								<h3 class="text-3xl font-semibold">TRUBUILD</h3>
+								<h4 class="pb-4 text-center">Construction</h4>
+							</div>
+						</div>
+						<div class=" mt-4 text-lg leading-relaxed text-gray-600">
+							<p class="max-w-lg">
+								Founded with a commitment to quality craftsmanship and reliable service,
+								Trubuild Construction specializes in home renovations and small projects
+								tailored to bring your vision to life. With expertise in decks, fences,
+								flooring, drywall installation and finishing, exterior siding, as well as
+								windows and doors, we’re here to enhance your home with precision and care.
+								<button
+								id="KeepReading"
+								class="text-blue-600 underline md:hidden cursor-pointer focus:outline-none"
+								onclick="toggleReadMore('AboutMore')"
+								>
+								Click to keep reading...
+								</button>
+								<button
+								id="Hide"
+								class="text-blue-600 underline hidden cursor-pointer focus:outline-none"
+								onclick="toggleReadMore('AboutMore')"
+								>
+								Show less...
+								</button>
+							</p>
+							<p id="AboutMore" class=" max-w-lg mt-4 text-lg leading-relaxed text-gray-600 hidden md:flex">
+								As a locally owned business, we’re passionate about building lasting relationships 
+								within our community and delivering results that exceed expectations. Whether you’re 
+								refreshing a single room or transforming your outdoor spaces, Trubuild Construction 
+								is ready to make your home renovation smooth, efficient, and rewarding.
+							</p>
+						</div>				
+					</div>
+				</div>
+				<!--Star List container-->
+				<div class="px-5 lg:px-24" data-aos="fade-bottom" >
+					<ul class="list-none mt-6 lg:flex lg:flex-row">
+						<li class="py-2">
+							<div class="flex items-center">
+								<div>
+									<span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-black bg-yellow-200 mr-3"><i class="fa-regular fa-star"></i></span>
+								</div>
+								<div class="">
+									<h4 class="text-gray-600">
+										Strong Local Reputation and Community Focus
+									</h4>
+								</div>
+							</div>
+						</li>
+						<li class="py-2 lg:px-24">
+							<div class="flex items-center">
+								<div>
+									<span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-black bg-yellow-200 mr-3"><i class="fa-regular fa-star"></i></span>
+								</div>
+								<div>
+									<h4 class="text-gray-600">Responsive Communication Throughout the Project</h4>
+								</div>
+							</div>
+						</li>
+						<li class="py-2">
+							<div class="flex items-center">
+								<div>
+									<span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-black bg-yellow-200 mr-3"><i class="fa-regular fa-star"></i></span>
+								</div>
+								<div>
+									<h4 class="text-gray-600">Friendly and Professional Team You Can Trust</h4>
+								</div>
+							</div>
+						</li>
+					</ul>							
+				</div>	
+			</div>		
+		</section>
 		<!--
 		
 		<nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3">
@@ -669,11 +798,17 @@
 	});</script>
 	<!-- Nav --->
 	<script>
-		function toggleNavmenu(divID) {
-		  document.getElementById(divID).classList.toggle("hidden");
+		function toggleNavmenu() {
+		  document.getElementById('navmenu').classList.toggle("hidden");
 		  document.getElementById('navmenu').classList.toggle("flex,justify-end");
-		  document.getElementById('HeroContent').classList.toggle("flex");
+		  document.getElementById('HeroContent').classList.toggle("hidden");
 		  
+		}
+		function toggleReadMore(Id) {
+			document.getElementById(Id).classList.toggle("hidden");
+			document.getElementById(Id).classList.toggle("flex");
+			document.getElementById('KeepReading').classList.toggle("hidden");
+			document.getElementById('Hide').classList.toggle("hidden");
 		}
 	</script>
 </html>
