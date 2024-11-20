@@ -52,13 +52,13 @@
 					<!-- Header positioned absolutely on top of the background -->
 					<div class="flex flex-col absolute top-0 left-0 w-full text-white ">
 						<!--top half header with contacts and socials right--->
-						<div class="bg-black w-full flex items-center justify-between px-2 py-3">
+						<div class="bg-black flex items-center justify-between px-2 py-3">
 							<!--double container for top half of header. this can be cleaned up later-->
-							<div class="container px-4 mx-auto flex items-center justify-between">
+							<div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
 								<!-- Contact info container, left side of top header  -->
-								<div class="w-full relative flex justify-between w-auto static block justify-start">
+								<div class="relative flex justify-between w-auto static block justify-start">
 									<!--left side-top header-contact info -->
-									<div class="flex flex-col md:flex-row ">  
+									<div class="flex flex-wrap sm:flex-row ">  
 										<a class="text-sm font-semibold inline-block mr-4 py-2 whitespac e-nowrap text-white hover:text-gray-300"
 										href="tel:+2504870748">
 											<i class="fa-solid fa-phone"></i>
@@ -69,39 +69,44 @@
 											<i class="fa-regular fa-envelope"></i>
 											trubuildcon@gmail.com
 										</a>
-										<div class="text-sm font-semibold leading-relaxed inline-block mr-4 py-2 whitespac e-nowrap text-white">
+										<div class="hidden md:inline-block text-sm font-semibold leading-relaxed inline-block mr-4 py-2 whitespac e-nowrap text-white">
 											<i class="fa-solid fa-location-dot"></i>
 											Penticton BC
 										</div>
+
 									<!--end of left side contact info-->
 									</div>
 								<!--end of contact info container, left side of top header -->
 								</div>
 								<!-- Socials Container, right side of top header -->
 								<div class="flex flex-grow items-center bg-transparent shadow-none ">
-									<ul class="flex flex-col md:flex-row list-none md:ml-auto">
+									<div class="md:hidden inline-block text-sm font-semibold leading-relaxed inline-block mr-4 py-2 whitespac e-nowrap text-white">
+										<i class="fa-solid fa-location-dot"></i>
+										Penticton BC
+									</div>			
+									<ul class="flex flex-row list-none ml-auto">
 										<li class="flex items-center">
-											<a class="px-3 lg:py-4 py-2 flex items-center text-xs uppercase font-bold hover:text-gray-300" 
+											<a class="px-3 pl-0 md:px-3 lg:py-4 sm:py-2 flex items-center text-xs uppercase font-bold hover:text-gray-300" 
 											href="#pablo">
 												<i class=" fab fa-facebook text-lg leading-lg"></i>
-												<span class="inline-block ml-2">Like</span>
+												<span class="hidden md:inline-block ml-2">Like</span>
 											</a>
 										</li>
 										<li class="flex items-center">
-											<a class="px-3 lg:py-4 py-2 flex items-center text-xs uppercase font-bold hover:text-gray-300" 
+											<a class="px-3 lg:py-4 sm:py-2 flex items-center text-xs uppercase font-bold hover:text-gray-300" 
 											href="#pablo">
 												<i class=" fab fa-x-twitter text-lg leading-lg"></i>
-												<span class="inline-block ml-2">Tweet</span>
+												<span class="hidden md:inline-block ml-2">Tweet</span>
 											</a>
 										</li>
 										<li class="flex items-center">
-											<a class="px-3 lg:py-4 py-2 flex items-center text-xs uppercase font-bold hover:text-gray-300" 
+											<a class="px-3 lg:py-4 sm:py-2 flex items-center text-xs uppercase font-bold hover:text-gray-300" 
 											href="#pablo">
 												<i class=" fab fa-instagram text-lg leading-lg"></i>
-												<span class="inline-block ml-2">Share</span>
+												<span class="hidden md:inline-block ml-2">Share</span>
 											</a>
 										</li>
-									</ul>
+									</ul>	
 								<!--end of socials container, right side of top header-->
 								</div>
 							<!--end of double container for top half of header, should be cleaned up later-->	
@@ -153,13 +158,13 @@
 						</div>					
 						<!--Background Content ontop of image, the real hero section technically still in the header so it does not overlap-->
 						<div id="HeroContent" class="m-2 flex flex-col items-center justify-center text-white ">
-							<h1 class="md:text-5xl  mt-16">HIGH QUALITY</h1>
+							<h1 class="md:text-5xl mt-8 md:mt-16">HIGH QUALITY</h1>
 							<h1 class="md:text-5xl mb-8">RENOVATIONS</h1>
 							<h3 class="md: ">Trusted Professionals</h3>
-						<!--end of Background content onto of image, the real hero section technically still in the header so it does not overlap-->
+						<!--end of Background content ontop of image, the real hero section technically still in the header so it does not overlap-->
 						</div>
 						<!-- Get in Touch Button-->
-						<div class="m-4 p-20 flex justify-center">
+						<div class="m-4 p-10 md:p-20 flex justify-center">
 							<button class=" rounded px-5 py-2 pb-3 text-xl text-bold cursor-pointer text-white border border-solid bg-transparent 
 								bg-black bg-opacity-50 hover:bg-opacity-60 hover:text-gray-300 hover:border-blue-200 "
 							> Get in Touch </button>
@@ -509,11 +514,6 @@
 				</div>
 			</div>
 		</footer>
-
-		
-		
-		
-		
 
 	</body>
 	<!-- AOS  -->
