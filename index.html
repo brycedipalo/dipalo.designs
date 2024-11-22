@@ -24,14 +24,13 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700;800&display=swap" rel="stylesheet">
+	   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 		<style>
 			.font-roboto { font-family: 'Roboto', sans-serif;}
-		 /* h2,h3,h4,h5,h6,li { font-family: 'Poppins', sans-serif;}
-		 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700;800&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-		 */
-			.font-montserrat, body, h1, h2, h3, h4, h5, h6, li {font-family: Arial, 'Roboto', 'Segoe UI', sans-serif, Helvetica;}
+		 	 h2,h3,h4,h5,h6,li { font-family: 'Poppins', sans-serif;}
+		 	.font-montserrat, body, h1, h2, h3, h4, h5, h6, li {font-family: Arial, 'Roboto', 'Montserrat', 'Segoe UI', sans-serif, Helvetica;}
 			h1, h3 {
 				font-family: Arial, 'Roboto', 'Segoe UI', sans-serif, Helvetica;
 				text-transform: uppercase;
@@ -304,58 +303,68 @@
 			</div>
 			
 			<!--Service section wrapper-->
-			<div style="padding-bottom: 80px;" class="p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center mx-auto" >
+			<div class="">
+			<div style="padding-bottom: 80px;" class="p-10 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center mx-auto" >
 				<!-- Image wrapper for text and overlay-->
 				<div class="flex justify-center">
-					<div class="relative" style="width: 300px; height: 500px;">
-						<img class=" m-2 rounded-lg shadow-lg" src="images/deck-300-500.jpg" alt="">
+					<div class="relative" >
+						<div class=""> 
+						<img class="md:hidden rounded-lg shadow-lg" src="images/deck-sm.jpg" alt="">
+						<img class="hidden md:inline-block rounded-lg shadow-lg" src="images/deck-300-500.jpg" alt="">
 						<!--overlay-->
-						<div class="m-2 rounded-lg shadow-lg w-full h-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
+						<div class=" rounded-lg shadow-lg w-full absolute inset-0 justify-center bg-black bg-opacity-50 text-white">
 							<!--Service Title-->
-							<h1 class=" py-20 text-2xl font-bold">Decks</h1>
+							<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Decks</h1>
+						</div>
 						</div>
 					</div>
 				</div>
 				<div class="flex justify-center">
-					<div class="relative" style="width: 300px; height: 500px;">
-						<img class=" m-2 rounded-lg shadow-lg" src="images/fence-300-500.jpg" alt="">
-						<div class=" m-2 rounded-lg shadow-lg w-full h-full absolute inset-0 justify-center bg-black bg-opacity-50 text-white">
-							<h1 class=" py-20 text-2xl font-bold">Fences</h1>
+					<div class="relative " >
+						<img class=" md:hidden rounded-lg shadow-lg" src="images/fence-sm.jpg" alt="">
+						<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/fence-300-500.jpg" alt="">
+						<div class=" rounded-lg shadow-lg w-full absolute inset-0 justify-center bg-black bg-opacity-50 text-white">
+							<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Fences</h1>
 						</div>
 					</div>
 				</div>
 				<div class="flex justify-center">	
-					<div class="relative" style="width: 300px; height: 500px;">
-						<img class=" m-2 rounded-lg shadow-lg" src="images/kitchen-300-500.jpg" alt="">
-						<div class=" m-2 rounded-lg shadow-lg w-full h-full absolute inset-0 justify-center bg-black bg-opacity-50 text-white">
-							<h1 class=" py-20 text-2xl font-bold">Kitchens</h1>
+					<div class="relative " >
+						<img class=" md:hidden rounded-lg shadow-lg" src="images/kitchen-sm.jpg" alt="">
+						<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/kitchen-300-500.jpg" alt="">
+						<div class=" rounded-lg shadow-lg w-full absolute inset-0 justify-center bg-black bg-opacity-50 text-white">
+							<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Kitchens</h1>
 						</div>
 					</div>
 				</div>
 				<div class="flex justify-center">
-					<div class="relative" style="width: 300px; height: 500px;">
-						<img class=" m-2 rounded-lg shadow-lg" src="images/bathroom-300-500.jpg" alt="">
-						<div class=" m-2 rounded-lg shadow-lg w-full h-full absolute inset-0 justify-center bg-black bg-opacity-50 text-white">
-							<h1 class=" py-20 text-2xl font-bold">Bathrooms</h1>
+					<div class="relative " >
+						<img class="md:hidden rounded-lg shadow-lg" src="images/bathroom-sm.jpg" alt="">
+						<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/bathroom-300-500.jpg" alt="">
+						<div class=" rounded-lg shadow-lg w-full absolute inset-0 justify-center bg-black bg-opacity-50 text-white">
+							<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Bathrooms</h1>
 						</div>
 					</div>
 				</div>
 				<div class="flex justify-center">
-					<div class="relative" style="width: 300px; height: 500px;">
-						<img class=" m-2 rounded-lg shadow-lg" src="images/floor-300-500.jpg" alt="">
-						<div class=" m-2 rounded-lg shadow-lg w-full h-full absolute inset-0 justify-center bg-black bg-opacity-50 text-white">
-							<h1 class=" py-20 text-2xl font-bold">Flooring</h1>
+					<div class="relative " >
+						<img class=" md:hidden rounded-lg shadow-lg" src="images/floor-sm.jpg" alt="">
+						<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/floor-300-500.jpg" alt="">
+						<div class=" rounded-lg shadow-lg w-full absolute inset-0 justify-center bg-black bg-opacity-50 text-white">
+							<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Flooring</h1>
 						</div>
 					</div>
 				</div>
 				<div class="flex justify-center">
-					<div class="relative" style="width: 300px; height: 500px;">
-						<img class=" m-2 rounded-lg shadow-lg" src="images/unfinished-bathroom-300-500.jpg" alt="">
-						<div class=" m-2 rounded-lg shadow-lg w-full h-full absolute inset-0 justify-center bg-black bg-opacity-50 text-white">
-							<h1 class=" py-20 text-2xl font-bold">Drywall</h1>
+					<div class="relative " >
+						<img class=" md:hidden rounded-lg shadow-lg" src="images/unfinished-bathroom-sm.jpg" alt="">
+						<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/unfinished-bathroom-300-500.jpg" alt="">
+						<div class=" rounded-lg shadow-lg w-full absolute inset-0 justify-center bg-black bg-opacity-50 text-white">
+							<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Drywall</h1>
 						</div>
 					</div>
 				</div>
+			</div>
 			</div>
 		</section>
 		<!--Contact us section -->
