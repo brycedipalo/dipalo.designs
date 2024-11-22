@@ -32,6 +32,23 @@
 		.font-roboto { font-family: 'Roboto', sans-serif;}
 		 .font-montserrat, body, h1, h2, h3, h4, h5, h6, li {font-family: 'Montserrat', 'Poppins' 'Roboto',  'Segoe UI', sans-serif, Arial, Helvetica;}
 		
+		 
+		#HeroImage {
+			background-image: url('images/blueprints.jpg');
+		}
+
+		@media (max-width: 1920px) {
+			#HeroImage {
+			background-image: url('images/blueprints-2000.jpg');
+			}
+		}
+
+		@media (max-width: 768px) {
+			#HeroImage {
+			background-image: url('images/blueprints-1000.jpg');
+			}
+		}
+
 		</style>
 				
 						
@@ -42,7 +59,8 @@
 		<!-- HERO Wrapper with background image secion -->
 		<div class="relative">	
 			<!-- Hero Image Section -->
-			<div id="HeroImage" class= "h-screen bg-cover bg-center" style="background-image: url('images/showcase.jpg');">
+			<div id="HeroImage" class= "h-screen bg-cover bg-center";">
+			
 				<!--Hero Image Cover -->
 				<div class= "h-screen bg-cover bg-center bg-black bg-opacity-20 flex-col" >
 					<!-- Header positioned absolutely on top of the background -->
@@ -97,7 +115,7 @@
 										</li>
 										<li class="flex items-center">
 											<a class="px-3 lg:py-4 sm:py-2 flex items-center text-xs uppercase font-bold hover:text-gray-300" 
-											href="#pablo">
+											href="https://brycedipalo.github.io/coolfx/">
 												<i class=" fab fa-instagram text-lg leading-lg"></i>
 												<span class="hidden md:inline-block ml-2">Share</span>
 											</a>
@@ -117,7 +135,7 @@
 										<a  class="ml-2 w-40 md:w-64 cursor-pointer">
 											<img onclick="NewHeroImg()" src="images/trubuild-rectangle-logo-555x1500.jpg"
 											alt="Trubuild Construction - Penticton BC - Home Renovation Services Logo"
-											style="border-radius: 0.5rem;">
+											style="border-radius: 0.5rem;" class="w-40 md:w-64">
 										</a>
 									<!--  navigation-->
 									<!-- Mobile menu button and Desktop Nav-->
@@ -160,15 +178,15 @@
 						<!--end of Background content ontop of image, the real hero section technically still in the header so it does not overlap-->
 						</div>
 						<!-- Get in Touch Button-->
-						<div class="m-4 p-10 md:p-20 flex justify-center">
-							<button data-aos="fade" data-aos-delay="2500" class=" rounded px-5 py-2 pb-3 text-xl text-bold cursor-pointer text-white border border-solid bg-transparent 
+						<div  class="m-4 p-10 md:p-20 flex justify-center">
+							<button id="HeroButton" data-aos="fade" data-aos-delay="2500" class=" rounded px-5 py-2 pb-3 text-xl text-bold cursor-pointer text-white border border-solid bg-transparent 
 								bg-black bg-opacity-50 hover:bg-opacity-60 hover:text-gray-300 hover:border-blue-200 "
 							> Get in Touch</button>
 						</div>
 					<!--end of Header and background/hero content positioned absolutely on top of the background -->
 					</div>	
 				<!--end of hero image cover (black opacity)-->							
-				</div>
+			</div>
 			<!--end of back ground image section-->
 			</div>
 			<!--Angled transition strip-->
@@ -304,7 +322,7 @@
 						<img class="md:hidden rounded-lg shadow-lg" src="images/deck-sm.jpg" alt="">
 						<img class="hidden md:inline-block rounded-lg shadow-lg" src="images/deck-300-500.jpg" alt="">
 						<!--overlay-->
-						<div class=" rounded-lg shadow-lg w-full absolute inset-0 justify-center bg-black bg-opacity-50 text-white">
+						<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
 							<!--Service Title-->
 							<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Decks</h1>
 						</div>
@@ -315,7 +333,7 @@
 					<div class="relative " >
 						<img class=" md:hidden rounded-lg shadow-lg" src="images/fence-sm.jpg" alt="">
 						<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/fence-300-500.jpg" alt="">
-						<div class=" rounded-lg shadow-lg w-full absolute inset-0 justify-center bg-black bg-opacity-50 text-white">
+						<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
 							<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Fences</h1>
 						</div>
 					</div>
@@ -324,7 +342,7 @@
 					<div class="relative " >
 						<img class=" md:hidden rounded-lg shadow-lg" src="images/kitchen-sm.jpg" alt="">
 						<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/kitchen-300-500.jpg" alt="">
-						<div class=" rounded-lg shadow-lg w-full absolute inset-0 justify-center bg-black bg-opacity-50 text-white">
+						<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
 							<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Kitchens</h1>
 						</div>
 					</div>
@@ -333,7 +351,7 @@
 					<div class="relative " >
 						<img class="md:hidden rounded-lg shadow-lg" src="images/bathroom-sm.jpg" alt="">
 						<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/bathroom-300-500.jpg" alt="">
-						<div class=" rounded-lg shadow-lg w-full absolute inset-0 justify-center bg-black bg-opacity-50 text-white">
+						<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
 							<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Bathrooms</h1>
 						</div>
 					</div>
@@ -342,7 +360,7 @@
 					<div class="relative " >
 						<img class=" md:hidden rounded-lg shadow-lg" src="images/floor-sm.jpg" alt="">
 						<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/floor-300-500.jpg" alt="">
-						<div class=" rounded-lg shadow-lg w-full absolute inset-0 justify-center bg-black bg-opacity-50 text-white">
+						<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
 							<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Flooring</h1>
 						</div>
 					</div>
@@ -351,7 +369,7 @@
 					<div class="relative " >
 						<img class=" md:hidden rounded-lg shadow-lg" src="images/unfinished-bathroom-sm.jpg" alt="">
 						<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/unfinished-bathroom-300-500.jpg" alt="">
-						<div class=" rounded-lg shadow-lg w-full absolute inset-0 justify-center bg-black bg-opacity-50 text-white">
+						<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
 							<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Drywall</h1>
 						</div>
 					</div>
@@ -510,7 +528,7 @@
 
 				</div>
 				<hr class="my-6 border-gray-400" />
-				<div class="flex flex-wrap items-center md:justify-between justify-center">
+				<div class="flex flex-col items-center md:justify-between justify-center">
 					<div class="w-full md:w-4/12 px-4 mx-auto text-center">
 						<div class="text-sm text-gray-600 font-semibold py-1">
 							Copyright © 2024 Bellissimo Creativo.  
@@ -524,6 +542,9 @@
 	</body>
 	<!-- AOS  -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" ></script>
+	<link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 	<script>AOS.init({
   delay: 200, // values from 0 to 3000, with step 50ms
   duration: 1500, // values from 0 to 3000, with step 50ms
@@ -534,6 +555,7 @@
 	});</script>
 	<!-- Nav --->
 	<script>
+		
 		function toggleNavmenu() {
 		  document.getElementById('navmenu').classList.toggle("hidden");
 		  document.getElementById('navmenu').classList.toggle("flex,justify-end");
@@ -558,7 +580,25 @@
 		function NewHeroImg(){
 			document.getElementById('HeroImage').style.backgroundImage = `url('${imageList[imgIndex]}')`;
 			imgIndex = (imgIndex +1) % imageList.length;
+			// Destroy and reinitialize AOS
+			document.querySelector('#HeroContent h1').removeAttribute('data-aos');
+			document.querySelector('#HeroContent h2').removeAttribute('data-aos');
+			document.querySelector('#HeroContent h2').removeAttribute('data-aos-delay');
+			document.querySelector('#HeroButton').removeAttribute('data-aos-delay');
+			document.querySelector('#HeroButton').removeAttribute('data-aos');
+		
+			document.querySelector('#HeroContent h1').setAttribute('data-aos', 'fade-up');
+			document.querySelector('#HeroContent h2').setAttribute('data-aos','fade-right');
+			document.querySelector('#HeroContent h2').setAttribute('data-aos-delay','1000');
+			document.querySelector('#HeroButton').setAttribute('data-aos-delay','2500');
+			document.querySelector('#HeroButton').setAttribute('data-aos','fade');
+				
+			  // Use a slight delay before refreshing AOS
+  setTimeout(() => {
+    AOS.refresh(); // Re-scan for animations
+  }, 50); // 50ms delay for DOM updates
 
+			
 		}
 
 	</script>
