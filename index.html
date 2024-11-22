@@ -27,21 +27,13 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700;800&display=swap" rel="stylesheet">
 	   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-		<style>
-			.font-roboto { font-family: 'Roboto', sans-serif;}
-		 	 h2,h3,h4,h5,h6,li { font-family: 'Poppins', sans-serif;}
-		 	.font-montserrat, body, h1, h2, h3, h4, h5, h6, li {font-family: Arial, 'Roboto', 'Montserrat', 'Segoe UI', sans-serif, Helvetica;}
-			h1, h3 {
-				font-family: Arial, 'Roboto', 'Segoe UI', sans-serif, Helvetica;
-				text-transform: uppercase;
-				letter-spacing: 1px; /* Slight spacing for better readability */
-				text-align: center; /* Center-align for emphasis */
-				font-size: 2.25rem;
-				/* font-weight: 700; */
-				font-weight: bold;
-			}
-			h3 { font-size: 1.4rem; font-weight: bold/*700*/;}
-			</style>
+
+	   <style>
+		.font-roboto { font-family: 'Roboto', sans-serif;}
+		 .font-montserrat, body, h1, h2, h3, h4, h5, h6, li {font-family: 'Montserrat', 'Poppins' 'Roboto',  'Segoe UI', sans-serif, Arial, Helvetica;}
+		
+		</style>
+				
 						
 		
 		  
@@ -50,7 +42,7 @@
 		<!-- HERO Wrapper with background image secion -->
 		<div class="relative">	
 			<!-- Hero Image Section -->
-			<div class= "h-screen bg-cover bg-center" style="background-image: url('images/showcase.jpg');">
+			<div id="HeroImage" class= "h-screen bg-cover bg-center" style="background-image: url('images/showcase.jpg');">
 				<!--Hero Image Cover -->
 				<div class= "h-screen bg-cover bg-center bg-black bg-opacity-20 flex-col" >
 					<!-- Header positioned absolutely on top of the background -->
@@ -122,8 +114,8 @@
 								<!-- flex container with logo and navigation -->	
 								<nav class="flex flex-row items-center justify-between px-2 py-3">						
 									<!--logo with link-->						
-										<a href="#contact" class="ml-2 w-40 md:w-64">
-											<img src="images/trubuild-rectangle-logo-555x1500.jpg"
+										<a  class="ml-2 w-40 md:w-64 cursor-pointer">
+											<img onclick="NewHeroImg()" src="images/trubuild-rectangle-logo-555x1500.jpg"
 											alt="Trubuild Construction - Penticton BC - Home Renovation Services Logo"
 											style="border-radius: 0.5rem;">
 										</a>
@@ -162,16 +154,16 @@
 						</div>					
 						<!--Background Content ontop of image, the real hero section technically still in the header so it does not overlap-->
 						<div id="HeroContent" class="m-2 flex flex-col items-center justify-center text-white ">
-							<h1 style="font-weight:semibold;" class="md:text-5xl mt-8 md:mt-16">HIGH QUALITY</h1>
-							<h1 style="font-weight:semibold;" class="md:text-5xl mb-8">RENOVATIONS</h1>
-							<h3 style="font-weight:semibold;" class="" ">Trusted Professionals</h3>
+							<h1 class="font-semibold text-2xl pt-5 md:pt-20 md:text-5xl mt-8 md:mt-16"  data-aos="fade-up">Your vision starts with us.</h1>
+							<h2 style="font-weight:semibold;" class="text-xl pt-10 md:text-2xl md:pt-20 " data-aos="fade-right" data-aos-delay="1000">High Quality Renovations</h2>
+							<h2 style="font-weight:semibold;" class="text-xl md:text-2xl" data-aos="fade-right" data-aos-delay="1000">Trusted Professionals</h2>
 						<!--end of Background content ontop of image, the real hero section technically still in the header so it does not overlap-->
 						</div>
 						<!-- Get in Touch Button-->
 						<div class="m-4 p-10 md:p-20 flex justify-center">
-							<button class=" rounded px-5 py-2 pb-3 text-xl text-bold cursor-pointer text-white border border-solid bg-transparent 
+							<button data-aos="fade" data-aos-delay="2500" class=" rounded px-5 py-2 pb-3 text-xl text-bold cursor-pointer text-white border border-solid bg-transparent 
 								bg-black bg-opacity-50 hover:bg-opacity-60 hover:text-gray-300 hover:border-blue-200 "
-							> Get in Touch </button>
+							> Get in Touch</button>
 						</div>
 					<!--end of Header and background/hero content positioned absolutely on top of the background -->
 					</div>	
@@ -554,5 +546,20 @@
 			document.getElementById('KeepReading').classList.toggle("hidden");
 			document.getElementById('Hide').classList.toggle("hidden");
 		}
+
+		//Array of image Urls
+		const imageList = [
+			'images/showcase.jpg',
+			'images/blueprints.jpg'
+		 ];
+		 let imgIndex =0; // used to track the current image
+
+
+		function NewHeroImg(){
+			document.getElementById('HeroImage').style.backgroundImage = `url('${imageList[imgIndex]}')`;
+			imgIndex = (imgIndex +1) % imageList.length;
+
+		}
+
 	</script>
 </html>
