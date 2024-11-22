@@ -32,8 +32,12 @@
 		.font-roboto { font-family: 'Roboto', sans-serif;}
 		 .font-montserrat, body, h1, h2, h3, h4, h5, h6, li {font-family: 'Montserrat', 'Poppins' 'Roboto',  'Segoe UI', sans-serif, Arial, Helvetica;}
 		
-		 
-		#HeroImage {
+		#HeroLogo {
+			width: 256px;
+
+		}
+		
+		 #HeroImage {
 			background-image: url('images/blueprints.jpg');
 		}
 
@@ -47,6 +51,8 @@
 			#HeroImage {
 			background-image: url('images/blueprints-1000.jpg');
 			}
+
+			#HeroLogo { width: 160px;}
 		}
 
 		</style>
@@ -133,9 +139,13 @@
 								<nav class="flex flex-row items-center justify-between px-2 py-3">						
 									<!--logo with link-->						
 										<a  class="ml-2 w-40 md:w-64 cursor-pointer">
-											<img onclick="NewHeroImg()" src="images/trubuild-rectangle-logo-555x1500.jpg"
-											alt="Trubuild Construction - Penticton BC - Home Renovation Services Logo"
-											style="border-radius: 0.5rem;" class="w-40 md:w-64">
+											<img onclick="NewHeroImg()" 
+												src="images/trubuild-rectangle-logo-555x1500.jpg"
+												alt="Trubuild Construction - Penticton BC - Home Renovation Services Logo"
+												style="border-radius: 0.5rem;" 
+												class="w-40 md:w-64 h-auto object-contain"
+												id="HeroLogo"
+												>
 										</a>
 									<!--  navigation-->
 									<!-- Mobile menu button and Desktop Nav-->
