@@ -43,10 +43,9 @@
 		.font-roboto { font-family: 'Roboto', sans-serif;}
 		 .font-montserrat, body, h1, h2, h3, h4, h5, h6, li {font-family: 'Montserrat', 'Poppins' 'Roboto',  'Segoe UI', sans-serif, Arial, Helvetica;}
 		
-		#HeroLogo {
-			width: 256px;
 
-		}
+
+		
 		
 		 #HeroImage {
 			background-image: url('images/blueprints.jpg');
@@ -63,7 +62,7 @@
 			background-image: url('images/blueprints-1000.jpg');
 			}
 
-			#HeroLogo { width: 160px;}
+
 		}
 
 		</style>
@@ -82,7 +81,7 @@
 			<div id="HeroImage" class= "h-screen bg-cover bg-center";">
 			
 				<!--Hero Image Cover -->
-				<div class= "h-screen bg-cover bg-center bg-black bg-opacity-20 flex-col" >
+				<div id="home" class= "h-screen bg-cover bg-center bg-black bg-opacity-20 flex-col" >
 					<!-- Header positioned absolutely on top of the background -->
 					<div class="flex flex-col absolute top-0 left-0 w-full text-white ">
 						<!--top half header with contacts and socials right--->
@@ -121,21 +120,17 @@
 									<ul class="flex flex-row list-none ml-auto">
 										<li class="flex items-center">
 											<a class="px-3 pl-0 md:px-3 lg:py-4 sm:py-2 flex items-center text-xs uppercase font-bold hover:text-gray-300" 
-											href="#pablo">
+											target="_blank" rel="noopener noreferrer"
+											href="https://www.facebook.com/profile.php?id=61567496781817">
 												<i class=" fab fa-facebook text-lg leading-lg"></i>
 												<span class="hidden md:inline-block ml-2">Like</span>
 											</a>
 										</li>
+
 										<li class="flex items-center">
 											<a class="px-3 lg:py-4 sm:py-2 flex items-center text-xs uppercase font-bold hover:text-gray-300" 
-											href="#pablo">
-												<i class=" fab fa-x-twitter text-lg leading-lg"></i>
-												<span class="hidden md:inline-block ml-2">Tweet</span>
-											</a>
-										</li>
-										<li class="flex items-center">
-											<a class="px-3 lg:py-4 sm:py-2 flex items-center text-xs uppercase font-bold hover:text-gray-300" 
-											href="https://brycedipalo.github.io/coolfx/">
+											target="_blank" rel="noopener noreferrer"
+											href="https://brycedipalo.github.io/RoboJoker/">
 												<i class=" fab fa-instagram text-lg leading-lg"></i>
 												<span class="hidden md:inline-block ml-2">Share</span>
 											</a>
@@ -151,16 +146,23 @@
 						<div class=" bg-black bg-opacity-50 ">
 								<!-- flex container with logo and navigation -->	
 								<nav class="flex flex-row items-center justify-between px-2 py-3">						
-									<!--logo with link-->						
-										<a  class="ml-2 w-40 md:w-64 cursor-pointer">
-											<img onclick="NewHeroImg()" 
-												src="images/trubuild-rectangle-logo-555x1500.jpg"
-												alt="Trubuild Construction - Penticton BC - Home Renovation Services Logo"
-												style="border-radius: 0.5rem;" 
-												class="w-40 md:w-64 h-auto object-contain"
-												id="HeroLogo"
-												>
+									<div id="logoDiv" class="ml-2 flex flex-row items-center">
+
+										<!--logo with link-->
+										<a  class="cursor-pointer">
+											<img onclick="NewIconImg()" 
+											src=""
+											alt="Trubuild Construction - Penticton BC - Home Renovation Services Logo"
+											style="border-radius: 0.5rem;" 
+											class="ml-2 object-contain"
+											id="HeroLogo"
+											>
 										</a>
+										<div id="LogoWords" class="hidden pl-2 flex flex-col text-black">
+											<h3 class="text-xl font-bold ">TRUBUILD</h3>
+											<h4 class="pb-1 text-md font-bold text-center">Construction</h4>
+										</div>
+									</div>						
 									<!--  navigation-->
 									<!-- Mobile menu button and Desktop Nav-->
 									<div class="mr-4"> 
@@ -173,11 +175,11 @@
 										</button>
 										<!--Medium screens and above display Nav menu	-->
 										<ul class="md:flex flex-row text-lg hidden">
-											<li class="mr-4 hover:text-gray-300"><a href="#home">HOME</a></li>
-											<li class="mr-4 hover:text-gray-300"><a href="#services">SERVICES</a></li>
-											<li class="mr-4 hover:text-gray-300"><a href="#gallery">GALLERY</a></li>
-											<li class="mr-4 hover:text-gray-300"><a href="#gallery">ABOUT</a></li>
-											<li class="mr-4 hover:text-gray-300"><a href="#gallery">CONTACT</a></li>
+										<!--<li class="mr-4 hover:text-gray-300"><a href="#home">HOME</a></li> -->
+											<li class="mr-4 hover:text-gray-300"><a href="#about">ABOUT</a></li>
+											<li class="mr-4 hover:text-gray-300"><a href="#service">SERVICES</a></li>
+										<!--<li class="mr-4 hover:text-gray-300"><a href="#gallery">GALLERY</a></li> -->
+											<li class="mr-4 hover:text-gray-300"><a href="#contact">CONTACT</a></li>
 										</ul>							
 									</div>								
 								<!-- end of nav & logo flex container-->
@@ -185,10 +187,10 @@
 								<!--dropdown menu-->
 								<div id="navmenu" class="flex justify-end hidden ">
 									<ul class="flex flex-col font-bold">
-										<li class="mr-4 p-2 text-right hover:text-gray-300"><a href="#home">Home</a></li>
-										<li class="mr-4 p-2 text-right hover:text-gray-300"><a href="#services">Services</a></li>
-										<li class="mr-4 p-2 text-right hover:text-gray-300"><a href="#gallery">Gallery</a></li>
+									<!-- <li class="mr-4 p-2 text-right hover:text-gray-300"><a href="#home">Home</a></li> -->
 										<li class="mr-4 p-2 text-right hover:text-gray-300"><a href="#about">About</a></li>
+										<li class="mr-4 p-2 text-right hover:text-gray-300"><a href="#service">Services</a></li>
+										<!-- <li class="mr-4 p-2 text-right hover:text-gray-300"><a href="#gallery">Gallery</a></li> -->
 										<li class="mr-4 p-2 text-right hover:text-gray-300"><a href="#contact">Contact</a></li>
 									</ul>
 								</div>
@@ -204,9 +206,11 @@
 						</div>
 						<!-- Get in Touch Button-->
 						<div  class="m-4 p-10 md:p-20 xl:p-10 flex justify-center">
-							<button id="HeroButton" data-aos="fade" data-aos-delay="2500" class=" rounded px-5 py-2 pb-3 text-xl text-bold cursor-pointer text-white border border-solid bg-transparent 
-								bg-black bg-opacity-50 hover:bg-opacity-60 hover:text-gray-300 hover:border-blue-200 "
-							> Get in Touch</button>
+							<a href="#contact">
+								<button id="HeroButton" data-aos="fade" data-aos-delay="2500" class=" rounded px-5 py-2 pb-3 text-xl text-bold cursor-pointer text-white border border-solid bg-transparent 
+									bg-black bg-opacity-50 hover:bg-opacity-60 hover:text-gray-300 hover:border-blue-200 "
+								> Get in Touch</button>
+							</a>
 						</div>
 					<!--end of Header and background/hero content positioned absolutely on top of the background -->
 					</div>	
@@ -224,7 +228,7 @@
 		<!-- end of Hero wrapper-->	
 		</div>
 		<!--About us Section-->
-		<section>
+		<section id="about">
 			<!-- About us Section wrapper-->
 			<div class="flex flex-col p-5">
 				<!-- Container for Top Part of About us for large displays image, logo, paragraphs -->
@@ -242,8 +246,9 @@
 						<!-- Title Block with logo-->
 						<div class="flex items-end">
 							<img
-							class="p-2 shadow-lg rounded-full bg-gray-200"
-							src="images/Round-logo.png"
+							id="AboutLogo"
+							class="p-1 shadow-2xl rounded-full" 
+							src="images/trubuildlogo-round-orange.png"
 							width="100"
 							/>
 							<div class="pl-2 flex flex-col">
@@ -327,9 +332,9 @@
 			<!-- end of about us wrapper section-->	
 			</div>
 		<!-- end of About us section-->			
-		</section>
-		<!--Service Section-->
-		<section>
+		</section >
+		<!-- Service Section-->
+		<section  id="service">
 			<!-- Angled Transistion strip-->
 			<div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px;">
 				<svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
@@ -403,7 +408,7 @@
 			</div>
 		</section>
 		<!--Contact us section -->
-		<section class="relative block py-24 lg:pt-0 bg-gray-900">
+		<section id="contact" class="relative block py-24 lg:pt-0 bg-gray-900">
 			<!-- Angled Transistion strip-->
 			<div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px;">
 				<svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
@@ -420,55 +425,67 @@
 						</p>
 					</div>
 				</div>
-				<!--Contact Form-->					
-				<div class="flex flex-wrap justify-center pt-8" data-aos="fade-in">
-					<div class="w-full lg:w-6/12 px-4">
-						<div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
-							<div class="flex-auto p-5 lg:p-10">
-								<h4 class="text-2xl font-semibold">Want to work with us?</h4>
-								<p class="leading-relaxed mt-1 mb-4 text-gray-600">
-									Complete this form and we will contact you .
-								</p>
-								<div class="relative w-full mb-3 mt-8">
-									<label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">Full Name</label>
-									<input
-										type="text"
-										class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-										placeholder="Full Name"
-										style="transition: all 0.15s ease 0s;"
-									/>
-								</div>
-								<div class="relative w-full mb-3">
-									<label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">Email</label>
-									<input
-										type="email"
-										class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-										placeholder="Email"
-										style="transition: all 0.15s ease 0s;"
-									/>
-								</div>
-								<div class="relative w-full mb-3">
-									<label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="message">Message</label>
-									<textarea
-										rows="4"
-										cols="80"
-										class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-										placeholder="Type a message..."
-									></textarea>
-								</div>
-								<div class="text-center mt-6">
-									<button
-										class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-										type="button"
-										style="transition: all 0.15s ease 0s;"
-									>
-										Send Message
-									</button>
+<!-- Form submit code example.>
+	<form action="https://formsubmit.co/your@email.com" method="POST">
+		<input type="text" name="name" required>
+		<input type="email" name="email" required>
+		<button type="submit">Send</button>
+	</form>
+-->
+
+				<!--Contact Form-->		
+				<form action="https://formsubmit.co/8451044cd0f1200bdd1513845448b82d" method="POST">			
+					<div class="flex flex-wrap justify-center pt-8" data-aos="fade-in">
+						<div class="w-full lg:w-6/12 px-4">
+							<div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
+								<div class="flex-auto p-5 lg:p-10">
+									<h4 class="text-2xl font-semibold">Want to work with us?</h4>
+									<p class="leading-relaxed mt-1 mb-4 text-gray-600">
+										Complete this form and we will contact you .
+									</p>
+									<div class="relative w-full mb-3 mt-8">
+										<label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">Full Name</label>
+										<input
+											type="text"
+											name="name" required
+											class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+											placeholder="Full Name"
+											style="transition: all 0.15s ease 0s;"
+										/>
+									</div>
+									<div class="relative w-full mb-3">
+										<label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">Email</label>
+										<input
+											type="email"
+											name="email" required
+											class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+											placeholder="Email"
+											style="transition: all 0.15s ease 0s;"
+										/>
+									</div>
+									<div class="relative w-full mb-3">
+										<label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="message">Message</label>
+										<textarea
+											rows="4"
+											cols="80"
+											class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+											placeholder="Type a message..."
+										></textarea>
+									</div>
+									<div class="text-center mt-6">
+										<button
+											class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+											type="submit"
+											style="transition: all 0.15s ease 0s;"
+										>
+											Send Message
+										</button>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				</form>
 			</div>
 		</section>
 		<footer class="relative bg-gray-300 pt-8 pb-6">
@@ -486,17 +503,24 @@
 							check us out on these platforms
 						</h5>
 						<div class="mt-6">
-							<button class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button">
-								<i class="flex fab fa-twitter"></i>
-							</button>
-							<button class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button">
+							<a 
+								target="_blank" rel="noopener noreferrer"
+								href="https://www.facebook.com/profile.php?id=61567496781817" >
+								<button class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button">
 								<i class="flex fab fa-facebook-square"></i>
-							</button>
-							<button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button">
-								<i class="flex fab fa-dribbble"></i>
-							</button>
-							<button class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button">
-								<i class="flex fab fa-github"></i>
+								</button>
+							</a>
+							<a 
+								target="_blank" rel="noopener noreferrer"
+								href="https://brycedipalo.github.io/RoboJoker/">
+								<button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button">
+									<i class="flex fab fa-instagram"></i>
+								</button>
+							</a>
+							<!-- 
+								<button class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button">
+									<i class="flex fab fa-github"></i>
+							-->
 							</button>
 						</div>
 					</div>
@@ -509,16 +533,24 @@
 									<span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Useful Links</span>
 									<ul class="list-unstyled">
 										<li>
-											<a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://www.simplymarla.com/small-home-renovation-ideas/">Inspiring Designs</a>
+											<a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" 
+											target="_blank" rel="noopener noreferrer"
+											href="https://www.simplymarla.com/small-home-renovation-ideas/">Inspiring Designs</a>
 										</li>
 										<li>
-											<a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="http://www.homemade-modern.com/">DIY Projects</a>
+											<a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+											target="_blank" rel="noopener noreferrer"
+											href="http://www.homemade-modern.com/">DIY Projects</a>
 										</li>
 										<li>
-											<a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://blog.expertsinyourhome.com/topic/home-maintenance">Home Maintence</a>
+											<a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+											target="_blank" rel="noopener noreferrer"
+											href="https://blog.expertsinyourhome.com/topic/home-maintenance">Home Maintenance</a>
 										</li>
 										<li>
-											<a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" href="https://lakecitycleaners.ca">House Cleaners</a>
+											<a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" 
+											target="_blank" rel="noopener noreferrer"
+											href="https://lakecitycleaners.ca">Local Proffessional House Cleaners</a>
 										</li>
 									</ul>
 								</div>
@@ -557,7 +589,12 @@
 					<div class="w-full md:w-4/12 px-4 mx-auto text-center">
 						<div class="text-sm text-gray-600 font-semibold py-1">
 							Copyright © 2024 Bellissimo Creativo.  
-							<a href="https://dipalo.design" class="text-gray-600 hover:text-gray-900"> dipalo.design </a>
+							<a 
+								target="_blank" rel="noopener noreferrer"
+								href="https://dipalo.design" 
+								class="text-gray-600 hover:text-gray-900">
+								dipalo.design
+							</a>
 						</div>
 					</div>
 				</div>
@@ -591,21 +628,40 @@
 				document.getElementById('KeepReading').classList.toggle("hidden");
 				document.getElementById('Hide').classList.toggle("hidden");
 			}
-
-			//Array of image Urls
-			const imageList = [
-				'images/showcase.jpg',
-				'images/blueprints.jpg'
-			];
+			
 			let imgIndex =0; // used to track the current image
 
+			//Array of image Urls
+			const HeaderImageList = [
+				'images/trubuild-rectangle-logo-555x1500.jpg',
+				'images/trubuildlogo-100.png',
+				'images/trubuildlogo-round-orange.png',				
+			];
 
-			function NewHeroImg(){
-				document.getElementById('HeroImage').style.backgroundImage = `url('${imageList[imgIndex]}')`;
-				imgIndex = (imgIndex +1) % imageList.length;
-			
+			//Array of image Urls
+			const AboutImageList = [
+				'images/Round-logo.png',
+				'images/trubuildlogo-round-orange.png',
+				'images/trubuildlogo-round-orange.png'				
+			];
+
+			function NewIconImg(){
+				imgIndex = (imgIndex +1) % HeaderImageList.length;
+				document.getElementById('HeroLogo').src = HeaderImageList[imgIndex];
+				if(imgIndex==0){
+						document.getElementById('HeroLogo').width = 150;
+						document.getElementById('LogoWords').classList.add("hidden");
+					}else if(imgIndex==1){
+						document.getElementById('HeroLogo').width = 90;
+					}else if(imgIndex==2){
+						document.getElementById('HeroLogo').width = 70;
+						document.getElementById('LogoWords').classList.remove("hidden");
+				}
+				document.getElementById('AboutLogo').src = AboutImageList[imgIndex];
+				
 			}
-			
+			NewIconImg();
+
 			window.addEventListener('load', () => {
 				document.getElementById('loader').style.display = 'none';
 				document.getElementById('content').classList.remove('hidden');
