@@ -18,6 +18,11 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 		<!--tailwind -->
 		<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+		
+
 		<!--AOS  -->	
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<script>
@@ -36,10 +41,29 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700;800&display=swap" rel="stylesheet">
-	   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 
 	   <style>
+		body, html {
+			margin: 0;
+			padding: 0;
+		}
+		/* Adjust the size of navigation buttons */
+		.swiper-button-next,
+		.swiper-button-prev {
+			width: 30px;
+			height: 30px;
+		}
+		.swiper-button-next::after,
+		.swiper-button-prev::after {
+			font-size: 16px;
+		}
+		#fullscreenModal {
+			overflow: hidden;
+		}
+
+
 		.font-roboto { font-family: 'Roboto', sans-serif;}
 		 .font-montserrat, body, h1, h2, h3, h4, h5, h6, li {font-family: 'Montserrat', 'Poppins' 'Roboto',  'Segoe UI', sans-serif, Arial, Helvetica;}
 		
@@ -49,6 +73,7 @@
 		
 		 #HeroImage {
 			background-image: url('images/blueprints.jpg');
+
 		}
 
 		@media (max-width: 1920px) {
@@ -62,6 +87,9 @@
 			background-image: url('images/blueprints-1000.jpg');
 			}
 
+			#GoogleReviewImgs img {
+				width:300px;
+			}
 
 		}
 
@@ -178,7 +206,7 @@
 										<!--<li class="mr-4 hover:text-gray-300"><a href="#home">HOME</a></li> -->
 											<li class="mr-4 hover:text-gray-300"><a href="#about">ABOUT</a></li>
 											<li class="mr-4 hover:text-gray-300"><a href="#service">SERVICES</a></li>
-										<!--<li class="mr-4 hover:text-gray-300"><a href="#gallery">GALLERY</a></li> -->
+											<li class="mr-4 hover:text-gray-300"><a href="#gallery">GALLERY</a></li>
 											<li class="mr-4 hover:text-gray-300"><a href="#contact">CONTACT</a></li>
 										</ul>							
 									</div>								
@@ -190,7 +218,7 @@
 									<!-- <li class="mr-4 p-2 text-right hover:text-gray-300"><a href="#home">Home</a></li> -->
 										<li class="mr-4 p-2 text-right hover:text-gray-300"><a href="#about">About</a></li>
 										<li class="mr-4 p-2 text-right hover:text-gray-300"><a href="#service">Services</a></li>
-										<!-- <li class="mr-4 p-2 text-right hover:text-gray-300"><a href="#gallery">Gallery</a></li> -->
+										<li class="mr-4 p-2 text-right hover:text-gray-300"><a href="#gallery">Gallery</a></li>
 										<li class="mr-4 p-2 text-right hover:text-gray-300"><a href="#contact">Contact</a></li>
 									</ul>
 								</div>
@@ -230,11 +258,12 @@
 		<!--About us Section-->
 		<section id="about">
 			<!-- About us Section wrapper-->
-			<div class="flex flex-col p-5">
+			<div class="flex flex-col p-5 items-center">
 				<!-- Container for Top Part of About us for large displays image, logo, paragraphs -->
-				<div class="flex flex-col lg:flex-row lg:items-center pt-20">
+				<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between pt-20">
 					<!-- Image Container for About us -->
-					<div class="lg:w-1/2 p-2" data-aos="flip-right">
+
+					<div class="lg:w-1/2 p-2 " data-aos="flip-right">
 					<img
 						alt="Home renovation worker"
 						class="rounded-lg shadow-lg"
@@ -247,7 +276,7 @@
 						<div class="flex items-end">
 							<img
 							id="AboutLogo"
-							class="p-1 shadow-2xl rounded-full" 
+							class="p-1 shadow-2xl bg-black rounded-full" 
 							src="images/trubuildlogo-round-orange.png"
 							width="100"
 							/>
@@ -327,85 +356,213 @@
 							</div>
 						</li>
 					</ul>
-				<!--end of starlist container-->							
+				<!--end of starlist container-->								
 				</div>
+				<!-- map with reviews
+					<iframe 
+					src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d663930.9390331625!2d-120.1374166!3d49.4565401!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa78c032ea1793e09%3A0xd8af7959e29369e1!2sTruBuild%20Construction!5e0!3m2!1sen!2sca!4v1732844732860!5m2!1sen!2sca" 
+					width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					-->
+				
+
+
+		</div>
+	
 			<!-- end of about us wrapper section-->	
 			</div>
 		<!-- end of About us section-->			
 		</section >
-		<!-- Service Section-->
-		<section  id="service">
+		<!-- start Service Section-->
+		<section id="service">
 			<!-- Angled Transistion strip-->
 			<div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px;">
 				<svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
 					<polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
 				</svg>
 			</div>
+			<div class="p-10 flex flex-col items-center">
+				<h3 class="pb-4 text-2xl font-semibold text-black">Solutions for Your Home</h3>
+				<!--Service section wrapper-->			
+				<div style="padding-bottom: 80px;" class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center mx-auto lg:w-10/12" >
+					
+					<!-- Image wrapper for text and overlay-->
+					<div class="flex justify-center">
+						<div class="relative" >
+							<div class=""> 
+								<img class="md:hidden rounded-lg shadow-lg" src="images/deck-sm.jpg" alt="">
+								<img class="hidden md:inline-block rounded-lg shadow-lg" src="images/deck-300-500.jpg" alt="">
+								<!--overlay-->
+								<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
+									<!--Service Title-->
+									<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Decks</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex justify-center">
+						<div class="relative " >
+							<img class=" md:hidden rounded-lg shadow-lg" src="images/fence-sm.jpg" alt="">
+							<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/fence-300-500.jpg" alt="">
+							<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
+								<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Fences</h1>
+							</div>
+						</div>
+					</div>
+					<div class="flex justify-center">	
+						<div class="relative " >
+							<img class=" md:hidden rounded-lg shadow-lg" src="images/kitchen-sm.jpg" alt="">
+							<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/kitchen-300-500.jpg" alt="">
+							<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
+								<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Kitchens</h1>
+							</div>
+						</div>
+					</div>
+					<div class="flex justify-center">
+						<div class="relative " >
+							<img class="md:hidden rounded-lg shadow-lg" src="images/bathroom-sm.jpg" alt="">
+							<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/bathroom-300-500.jpg" alt="">
+							<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
+								<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Bathrooms</h1>
+							</div>
+						</div>
+					</div>
+					<div class="flex justify-center">
+						<div class="relative " >
+							<img class=" md:hidden rounded-lg shadow-lg" src="images/floor-sm.jpg" alt="">
+							<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/floor-300-500.jpg" alt="">
+							<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
+								<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Flooring</h1>
+							</div>
+						</div>
+					</div>
+					<div class="flex justify-center">
+						<div class="relative " >
+							<img class=" md:hidden rounded-lg shadow-lg" src="images/unfinished-bathroom-sm.jpg" alt="">
+							<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/unfinished-bathroom-300-500.jpg" alt="">
+							<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
+								<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Drywall</h1>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		<!-- End of Service section-->	
+		</section>
+
+		<!-- Start Gallery section--> 
+		<section id="gallery" 
+			class="p-10 flex flex-col items-center pb-60">
+
+			<h2 class="pb-4 text-4xl font-semibold text-black">See the Difference</h2>
+			<!-- photo wheel  -->
+			<div class=" flex items-center justify-center shadow-lg">
+
+				<!-- Swiper Container -->
+				<div class="swiper w-full max-w-lg sm:max-w-3xl h-auto sm:px-0" >
+				  <div id="swiperWrapper" class="swiper-wrapper">
+					<!-- Slides will be dynamically injected -->
+				  </div>
+			  
+				  <!-- Navigation Buttons -->
+				  <div class="swiper-button-next"></div>
+				  <div class="swiper-button-prev"></div>
+				  <div class="swiper-pagination"></div>
+				</div>
+			  
+				<!-- Fullscreen Modal -->
+				<div id="fullscreenModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50">
+				  <button id="closeFullscreen" class="absolute top-5 right-5 text-white text-2xl">&times;</button>
+				  <img id="fullscreenImage" src="" alt="Fullscreen" class="max-w-full max-h-full mx-auto rounded-lg">
+				</div>
+			  
+				<script>
+				  // Dynamically generate the image list
+				  const imageFolder = '/images/gallery/';
+				  const totalImages = 25;
+				  const imageList = Array.from({ length: totalImages }, (_, i) => `${imageFolder}${i + 1}.jpg`);
+			  
+				  // Populate the Swiper container
+				  const swiperWrapper = document.getElementById('swiperWrapper');
+				  imageList.forEach(src => {
+					const slide = document.createElement('div');
+					slide.className = 'swiper-slide';
+					slide.innerHTML = `<img src="${src}" alt="Photo" class="w-full h-96 md:h-[500px] lg:h-[600px] object-cover shadow-lg rounded-lg">`;
+					swiperWrapper.appendChild(slide);
+				  });
+			  
+				  // Initialize Swiper
+				  const swiper = new Swiper('.swiper', {
+					loop: true,
+					navigation: {
+					  nextEl: '.swiper-button-next',
+					  prevEl: '.swiper-button-prev',
+					},
+					pagination: {
+					  el: '.swiper-pagination',
+					  clickable: true,
+					},
+					autoplay: {
+					  delay: 3000,
+					  disableOnInteraction: false,
+					},
+				  });
+			  
+				  // Fullscreen functionality
+				  const fullscreenModal = document.getElementById('fullscreenModal');
+				  const fullscreenImage = document.getElementById('fullscreenImage');
+				  const closeFullscreen = document.getElementById('closeFullscreen');
+			  
+				  // Show fullscreen modal on image click
+				  document.addEventListener('click', (event) => {
+					if (event.target.tagName === 'IMG' && event.target.closest('.swiper-slide')) {
+					  fullscreenImage.src = event.target.src;
+					  fullscreenModal.classList.remove('hidden');
+					}
+				  });
+			  
+				  // Close fullscreen modal
+				  closeFullscreen.addEventListener('click', () => {
+					fullscreenModal.classList.add('hidden');
+					fullscreenImage.src = '';
+				  });
+			  
+				  // Close modal by clicking outside the image
+				  fullscreenModal.addEventListener('click', (event) => {
+					if (event.target === fullscreenModal) {
+					  fullscreenModal.classList.add('hidden');
+					  fullscreenImage.src = '';
+					}
+				  });
+				</script>
+			  
+			</div>
 			
-			<!--Service section wrapper-->
-			<div class="">
-			<div style="padding-bottom: 80px;" class="p-10 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center mx-auto lg:w-10/12" >
-				<!-- Image wrapper for text and overlay-->
-				<div class="flex justify-center">
-					<div class="relative" >
-						<div class=""> 
-						<img class="md:hidden rounded-lg shadow-lg" src="images/deck-sm.jpg" alt="">
-						<img class="hidden md:inline-block rounded-lg shadow-lg" src="images/deck-300-500.jpg" alt="">
-						<!--overlay-->
-						<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
-							<!--Service Title-->
-							<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Decks</h1>
-						</div>
-						</div>
-					</div>
+			
+
+
+			<!-- Google reviews container-->
+			<div class="flex flex-col items-center pt-20">
+				<div class="pb-2 flex justify-center">
+					<img src="images/verified-reviews.jpg"
+					alt="verified-google-reviews"
+					width="137px"
+					>
 				</div>
-				<div class="flex justify-center">
-					<div class="relative " >
-						<img class=" md:hidden rounded-lg shadow-lg" src="images/fence-sm.jpg" alt="">
-						<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/fence-300-500.jpg" alt="">
-						<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
-							<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Fences</h1>
-						</div>
-					</div>
-				</div>
-				<div class="flex justify-center">	
-					<div class="relative " >
-						<img class=" md:hidden rounded-lg shadow-lg" src="images/kitchen-sm.jpg" alt="">
-						<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/kitchen-300-500.jpg" alt="">
-						<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
-							<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Kitchens</h1>
-						</div>
-					</div>
-				</div>
-				<div class="flex justify-center">
-					<div class="relative " >
-						<img class="md:hidden rounded-lg shadow-lg" src="images/bathroom-sm.jpg" alt="">
-						<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/bathroom-300-500.jpg" alt="">
-						<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
-							<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Bathrooms</h1>
-						</div>
-					</div>
-				</div>
-				<div class="flex justify-center">
-					<div class="relative " >
-						<img class=" md:hidden rounded-lg shadow-lg" src="images/floor-sm.jpg" alt="">
-						<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/floor-300-500.jpg" alt="">
-						<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
-							<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Flooring</h1>
-						</div>
-					</div>
-				</div>
-				<div class="flex justify-center">
-					<div class="relative " >
-						<img class=" md:hidden rounded-lg shadow-lg" src="images/unfinished-bathroom-sm.jpg" alt="">
-						<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/unfinished-bathroom-300-500.jpg" alt="">
-						<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
-							<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Drywall</h1>
-						</div>
-					</div>
-				</div>
+			<!-- Review Container. add classes when more than 1 review-->
+			<div id="GoogleReviewImgs" class="">
+
+				<img src="images/Google Review1.jpg"
+				alt="Google review"
+				class="rounded-lg shadow-lg"
+				
+				>
 			</div>
-			</div>
+
+			
+			
+			
+		<!--end of gallery section-->		
 		</section>
 		<!--Contact us section -->
 		<section id="contact" class="relative block py-24 lg:pt-0 bg-gray-900">
