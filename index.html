@@ -991,16 +991,11 @@
 		  const modalTitle = document.getElementById('modalTitle');
 		  const modalText = document.getElementById('modalText');
 		  const closeModal = document.getElementById('closeModal');
-		  const modalCTA = document.getElementById('modalCTA');
-	  
-		  // Debugging: Log if images are found
-		  console.log(`Found ${serviceItems.length} service items.`);
-		  console.log('Service Items:', serviceItems);
+		  const modalCTA = document.getElementById('modalCTA');  
 				
 		  // Attach click event to each image
 		  serviceItems.forEach((item) => {
 			item.addEventListener('click',()=> {
-				console.log(`Attaching event to img ${item + 1}`);
 				const img = item.querySelector('img');
 				const title = img.dataset.title;
 				const text = img.dataset.text;
@@ -1018,8 +1013,6 @@
 				serviceModal.classList.remove('hidden');
 			});
 		  });	
-
-
 	  
 		  // Close modal
 		  closeModal.addEventListener('click', () => {
