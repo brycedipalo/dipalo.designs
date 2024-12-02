@@ -18,17 +18,10 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 		<!--tailwind -->
 		<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-		
-		<!--for carousel
 		<script src="https://cdn.tailwindcss.com"></script>
-		-->
-		  <!-- Include Swiper.js CSS -->
-		  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-		  <style>
-			.swiper-slide img {
-			  cursor: pointer;
-			}
-		  </style>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+		
 
 		<!--AOS  -->	
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -39,7 +32,6 @@
 				once: false, // whether animation should happen only once - while scrolling down
 				mirror: false, // whether elements should animate out while scrolling past them
 				anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
 			});
 		</script>
 
@@ -48,18 +40,37 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700;800&display=swap" rel="stylesheet">
-	   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 
 	   <style>
+		body, html {
+			margin: 0;
+			padding: 0;
+		}
+		/* Adjust the size of navigation buttons */
+		.swiper-button-next,
+		.swiper-button-prev {
+			width: 30px;
+			height: 30px;
+		}
+		.swiper-button-next::after,
+		.swiper-button-prev::after {
+			font-size: 16px;
+		}
+		#fullscreenModal {
+			overflow: hidden;
+		}
+
+
 		.font-roboto { font-family: 'Roboto', sans-serif;}
-		 .font-montserrat, body, h1, h2, h3, h4, h5, h6, li {font-family: 'Montserrat', 'Poppins' 'Roboto',  'Segoe UI', sans-serif, Arial, Helvetica;}
+		.font-montserrat, body, h1, h2, h3, h4, h5, h6, li {font-family: 'Montserrat', 'Poppins' 'Roboto',  'Segoe UI', sans-serif, Arial, Helvetica;}
 		
 
 
 		
 		
-		 #HeroImage {
+		#HeroImage {
 			background-image: url('images/blueprints.jpg');
 
 		}
@@ -259,7 +270,7 @@
 					/>
 					</div>
 					<!-- container for right side on large display to keep first p below logo and next to img-->
-					<div class="lg:items-start p-5 "data-aos="fade-left" data-aos-delay="1000">  
+					<div class="lg:items-start p-5 "data-aos="fade-in" data-aos-delay="1000">  
 						<!-- Title Block with logo-->
 						<div class="flex items-end">
 							<img
@@ -351,24 +362,7 @@
 					src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d663930.9390331625!2d-120.1374166!3d49.4565401!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa78c032ea1793e09%3A0xd8af7959e29369e1!2sTruBuild%20Construction!5e0!3m2!1sen!2sca!4v1732844732860!5m2!1sen!2sca" 
 					width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					-->
-				<!-- Google reviews container-->
-				<div class="flex flex-col items-center pt-10">
-						<div class="pb-2 flex justify-center">
-							<img src="images/verified-reviews.jpg"
-							alt="verified-google-reviews"
-							width="137px"
-							>
-						</div>
-					<!-- Review Container. add classes when more than 1 review-->
-					<div id="GoogleReviewImgs" class="">
-
-						<img src="images/Google Review1.jpg"
-						alt="Google review"
-						class="rounded-lg shadow-lg"
-						 
-						>
-					</div>
-				</div>
+				
 
 
 		</div>
@@ -388,14 +382,13 @@
 			<div class="p-10 flex flex-col items-center">
 				<h3 class="pb-4 text-2xl font-semibold text-black">Solutions for Your Home</h3>
 				<!--Service section wrapper-->			
-				<div style="padding-bottom: 80px;" class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center mx-auto lg:w-10/12" >
+				<div  class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center mx-auto lg:w-10/12" >
 					
 					<!-- Image wrapper for text and overlay-->
 					<div class="flex justify-center">
 						<div class="relative" >
 							<div class=""> 
-								<img class="md:hidden rounded-lg shadow-lg" src="images/deck-sm.jpg" alt="">
-								<img class="hidden md:inline-block rounded-lg shadow-lg" src="images/deck-300-500.jpg" alt="">
+								<img class="rounded-lg shadow-lg" src="images/deck-sm.jpg" alt="">
 								<!--overlay-->
 								<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
 									<!--Service Title-->
@@ -406,8 +399,8 @@
 					</div>
 					<div class="flex justify-center">
 						<div class="relative " >
-							<img class=" md:hidden rounded-lg shadow-lg" src="images/fence-sm.jpg" alt="">
-							<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/fence-300-500.jpg" alt="">
+							<img class=" rounded-lg shadow-lg" src="images/fence-sm.jpg" alt="">
+							
 							<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
 								<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Fences</h1>
 							</div>
@@ -415,8 +408,8 @@
 					</div>
 					<div class="flex justify-center">	
 						<div class="relative " >
-							<img class=" md:hidden rounded-lg shadow-lg" src="images/kitchen-sm.jpg" alt="">
-							<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/kitchen-300-500.jpg" alt="">
+							<img class=" rounded-lg shadow-lg" src="images/kitchen-sm.jpg" alt="">
+							
 							<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
 								<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Kitchens</h1>
 							</div>
@@ -424,8 +417,8 @@
 					</div>
 					<div class="flex justify-center">
 						<div class="relative " >
-							<img class="md:hidden rounded-lg shadow-lg" src="images/bathroom-sm.jpg" alt="">
-							<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/bathroom-300-500.jpg" alt="">
+							<img class="rounded-lg shadow-lg" src="images/bathroom-sm.jpg" alt="">
+							
 							<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
 								<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Bathrooms</h1>
 							</div>
@@ -433,8 +426,8 @@
 					</div>
 					<div class="flex justify-center">
 						<div class="relative " >
-							<img class=" md:hidden rounded-lg shadow-lg" src="images/floor-sm.jpg" alt="">
-							<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/floor-300-500.jpg" alt="">
+							<img class=" rounded-lg shadow-lg" src="images/floor-sm.jpg" alt="">
+							
 							<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
 								<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Flooring</h1>
 							</div>
@@ -442,8 +435,8 @@
 					</div>
 					<div class="flex justify-center">
 						<div class="relative " >
-							<img class=" md:hidden rounded-lg shadow-lg" src="images/unfinished-bathroom-sm.jpg" alt="">
-							<img class=" hidden md:inline-block rounded-lg shadow-lg" src="images/unfinished-bathroom-300-500.jpg" alt="">
+							<img class=" rounded-lg shadow-lg" src="images/unfinished-bathroom-sm.jpg" alt="">
+							
 							<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
 								<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Drywall</h1>
 							</div>
@@ -455,90 +448,199 @@
 		<!-- End of Service section-->	
 		</section>
 
-		<!-- Start Gallery section--> 
-		<section id="gallery" style="padding-bottom: 100px;" 
-			class="p-10 flex flex-col items-center ">
+		<!-- Start Photo WHeel section--> 
+		<section id="gallery" 
+			class="p-10 pb-20 flex flex-col items-center lg:pb-60">
 
-			<h2 class="pb-4 text-4xl font-semibold text-black">See the Difference</h2>
-			<!-- Carousel -->
-			<div class="w-full max-w-4xl">
-				<div class="swiper">
-				<!-- Swiper Wrapper -->
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-					<img src="https://via.placeholder.com/800x400?text=Photo+1" alt="Photo 1" class="w-full rounded-lg">
-					</div>
-					<div class="swiper-slide">
-					<img src="https://via.placeholder.com/800x400?text=Photo+2" alt="Photo 2" class="w-full rounded-lg">
-					</div>
-					<div class="swiper-slide">
-					<img src="https://via.placeholder.com/800x400?text=Photo+3" alt="Photo 3" class="w-full rounded-lg">
-					</div>
+			<h2 class="pb-4 text-2xl font-semibold text-black">See the Difference</h2>
+			<!-- photo wheel  -->
+			<div class=" flex items-center justify-center shadow-lg overflow-hidden">
+
+				<!-- Swiper Container -->
+				<div class="swiper w-full max-w-xs mx-auto sm:max-w-lg lg:max-w-3xl h-auto sm:px-0" >
+				  <div id="swiperWrapper" class="swiper-wrapper">
+					<!-- Slides will be dynamically injected -->
+				  </div>
+			  
+				  <!-- Navigation Buttons -->
+				  <div class="swiper-button-next"></div>
+				  <div class="swiper-button-prev"></div>
+				  <div class="swiper-pagination"></div>
 				</div>
-				<!-- Pagination (dots) -->
-				<div class="swiper-pagination"></div>
-				<!-- Navigation Buttons -->
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
+			  
+				<!-- Fullscreen Modal -->
+				<div id="fullscreenModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50">
+				  <button id="closeFullscreen" class="absolute top-5 right-5 text-white text-2xl">&times;</button>
+				  <img id="fullscreenImage" src="" alt="Fullscreen" class="max-w-full max-h-full mx-auto rounded-lg">
 				</div>
-			</div>
-
-			<!-- Fullscreen Modal -->
-			<div id="fullscreenModal" class="fixed inset-0 bg-black bg-opacity-80 hidden z-50 flex justify-center items-center">
-				<img id="fullscreenImage" src="" alt="Fullscreen View" class="max-w-full max-h-full">
-				<button id="closeFullscreen" class="absolute top-4 right-4 text-white text-2xl">✕</button>
-			</div>
-
-			<!-- Include Swiper.js -->
-			<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-			<script>
-				// Initialize Swiper
-				const swiper = new Swiper('.swiper', {
-				loop: true,
-				navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev',
-				},
-				pagination: {
-					el: '.swiper-pagination',
-					clickable: true,
-				},
-				autoplay: {
-					delay: 3000,
-					disableOnInteraction: false,
-				},
-				});
-
-				// Fullscreen Modal Functionality
-				const fullscreenModal = document.getElementById('fullscreenModal');
-				const fullscreenImage = document.getElementById('fullscreenImage');
-				const closeFullscreen = document.getElementById('closeFullscreen');
-
-				// Show fullscreen modal on image click
-				document.querySelectorAll('.swiper-slide img').forEach(image => {
-				image.addEventListener('click', () => {
-					fullscreenImage.src = image.src;
-					fullscreenModal.classList.remove('hidden');
-				});
-				});
-
-				// Close fullscreen modal
-				closeFullscreen.addEventListener('click', () => {
-				fullscreenModal.classList.add('hidden');
-				fullscreenImage.src = '';
-				});
-
-				// Close modal by clicking outside the image
-				fullscreenModal.addEventListener('click', (event) => {
-				if (event.target === fullscreenModal) {
+			  
+				<script>
+				  // Dynamically generate the image list
+				  const imageFolder = 'images/gallery/';
+				  const totalImages = 25;
+				  const imageList = Array.from({ length: totalImages }, (_, i) => `${imageFolder}${i + 1}.jpg`);
+			  
+				  // Populate the Swiper container
+				  const swiperWrapper = document.getElementById('swiperWrapper');
+				  imageList.forEach(src => {
+					const slide = document.createElement('div');
+					slide.className = 'swiper-slide';
+					slide.innerHTML = `<img src="${src}" alt="Photo" class="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover shadow-lg rounded-lg">`;
+					swiperWrapper.appendChild(slide);
+				  });
+			  
+				  // Initialize Swiper
+				  const swiper = new Swiper('.swiper', {
+					loop: true,
+					navigation: {
+					  nextEl: '.swiper-button-next',
+					  prevEl: '.swiper-button-prev',
+					},
+					pagination: {
+					  el: '.swiper-pagination',
+					  clickable: true,
+					},
+					autoplay: {
+					  delay: 3000,
+					  disableOnInteraction: false,
+					},
+				  });
+			  
+				  // Fullscreen functionality
+				  const fullscreenModal = document.getElementById('fullscreenModal');
+				  const fullscreenImage = document.getElementById('fullscreenImage');
+				  const closeFullscreen = document.getElementById('closeFullscreen');
+			  
+				  // Show fullscreen modal on image click
+				  document.addEventListener('click', (event) => {
+					if (event.target.tagName === 'IMG' && event.target.closest('.swiper-slide')) {
+					  fullscreenImage.src = event.target.src;
+					  fullscreenModal.classList.remove('hidden');
+					}
+				  });
+			  
+				  // Close fullscreen modal
+				  closeFullscreen.addEventListener('click', () => {
 					fullscreenModal.classList.add('hidden');
 					fullscreenImage.src = '';
+				  });
+			  
+				  // Close modal by clicking outside the image
+				  fullscreenModal.addEventListener('click', (event) => {
+					if (event.target === fullscreenModal) {
+					  fullscreenModal.classList.add('hidden');
+					  fullscreenImage.src = '';
+					}
+				  });
+				</script>
+			<!--end of photowheel container-->
+			</div>
+
+			<!-- Link to Open Gallery -->
+			<div class="text-center my-8">
+				<button id="openGallery" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+				Open Photo Gallery
+				</button>
+			</div>
+
+			<!-- Fullscreen Gallery Modal -->
+			<div id="galleryModal" class="fixed inset-0 bg-black bg-opacity-90 hidden flex items-center justify-center z-50 overflow-auto">
+				<div class="relative w-full max-w-5xl p-4 max-h-screen overflow-auto">
+
+				<button id="closeGallery" class="absolute top-4 right-4 text-white text-2xl">&times;</button>
+				
+				<!-- Photo Grid -->
+				<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+					<!-- Photos will be dynamically injected -->
+				</div>
+				</div>
+			</div>
+			
+
+			<!-- Fullscreen Photo Modal -->
+			<div id="photoModal" class="fixed inset-0 bg-black bg-opacity-90 hidden flex items-center justify-center z-50">
+				<button id="closePhotoModal" class="absolute top-4 right-4 text-white text-2xl">&times;</button>
+				<img id="photoModalImage" src="" alt="Fullscreen Photo" class="max-w-full max-h-full rounded-lg">
+			</div>
+
+			<script>
+				// Gallery Modal Elements
+				const galleryModal = document.getElementById('galleryModal');
+				const closeGallery = document.getElementById('closeGallery');
+
+				// Fullscreen Photo Modal Elements
+				const photoModal = document.getElementById('photoModal');
+				const photoModalImage = document.getElementById('photoModalImage');
+				const closePhotoModal = document.getElementById('closePhotoModal');
+
+				// Inject Photos into Gallery Modal
+				const galleryGrid = galleryModal.querySelector('.grid');
+				imageList.forEach(src => {
+				const imgElement = document.createElement('img');
+				imgElement.src = src;
+				imgElement.alt = 'Photo';
+				imgElement.className = 'cursor-pointer w-full h-auto rounded-lg';
+				imgElement.addEventListener('click', () => {
+					photoModalImage.src = src;
+					photoModal.classList.remove('hidden');
+				});
+				galleryGrid.appendChild(imgElement);
+				});
+
+				// Open Gallery Modal
+				document.getElementById('openGallery').addEventListener('click', () => {
+				galleryModal.classList.remove('hidden');
+				});
+
+				// Close Gallery Modal
+				closeGallery.addEventListener('click', () => {
+				galleryModal.classList.add('hidden');
+				});
+
+				// Close Photo Modal
+				closePhotoModal.addEventListener('click', () => {
+				photoModal.classList.add('hidden');
+				});
+
+				// Close Modals by Clicking Outside Image
+				galleryModal.addEventListener('click', (event) => {
+				if (event.target === galleryModal) {
+					galleryModal.classList.add('hidden');
 				}
 				});
+
+				photoModal.addEventListener('click', (event) => {
+				if (event.target === photoModal) {
+					photoModal.classList.add('hidden');
+				}
+				});
+			// End of Photo Gallery
 			</script>
+			
+			
+			
 
-			<!--end of carousel-->
 
+			<!-- Google reviews container-->
+			<div class="flex flex-col items-center pt-20">
+				<div class="pb-2 flex justify-center">
+					<img src="images/verified-reviews.jpg"
+					alt="verified-google-reviews"
+					width="137px"
+					>
+				</div>
+			<!-- Review Container. add classes when more than 1 review-->
+			<div id="GoogleReviewImgs" class="">
+
+				<img src="images/Google Review1.jpg"
+				alt="Google review"
+				class="rounded-lg shadow-lg"
+				
+				>
+			</div>
+
+			
+			
 			
 		<!--end of gallery section-->		
 		</section>
@@ -685,7 +787,7 @@
 										<li>
 											<a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" 
 											target="_blank" rel="noopener noreferrer"
-											href="https://lakecitycleaners.ca">Local Proffessional House Cleaners</a>
+											href="https://lakecitycleaners.ca">Local Professional House Cleaners</a>
 										</li>
 									</ul>
 								</div>
