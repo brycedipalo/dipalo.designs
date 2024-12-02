@@ -116,15 +116,15 @@
 							<!--double container for top half of header. this can be cleaned up later-->
 							<div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
 								<!-- Contact info container, left side of top header  -->
-								<div class="relative flex justify-between w-auto static block justify-start">
+								<div class="w-full sm:w-auto relative flex sm:justify-between w-auto static block">
 									<!--left side-top header-contact info -->
-									<div class="flex flex-wrap sm:flex-row ">  
+									<div class="w-full flex flex-wrap justify-between sm:flex-row ">  
 										<a class="text-sm font-semibold inline-block mr-4 py-2 whitespac e-nowrap text-white hover:text-gray-300"
 										href="tel:+2504870748">
 											<i class="fa-solid fa-phone"></i>
 											250-487-0748
 										</a>
-										<a class="text-sm font-semibold leading-relaxed inline-block mr-4 py-2 whitespac e-nowrap text-white hover:text-gray-300"
+										<a class="text-sm font-semibold leading-relaxed inline-block py-2 pr-3 whitespac e-nowrap text-white hover:text-gray-300"
 										href="href="mailto:trubuildcon@gmail.com">
 											<i class="fa-regular fa-envelope"></i>
 											trubuildcon@gmail.com
@@ -379,72 +379,130 @@
 					<polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
 				</svg>
 			</div>
+
+			<!-- Service items wrapper-->
 			<div class="p-10 flex flex-col items-center">
 				<h3 class="pb-4 text-2xl font-semibold text-black">Solutions for Your Home</h3>
 				<!--Service section wrapper-->			
 				<div  class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center mx-auto lg:w-10/12" >
 					
-					<!-- Image wrapper for text and overlay-->
-					<div class="flex justify-center">
-						<div class="relative" >
-							<div class=""> 
-								<img class="rounded-lg shadow-lg" src="images/deck-sm.jpg" alt="">
-								<!--overlay-->
-								<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
-									<!--Service Title-->
-									<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Decks</h1>
-								</div>
-							</div>
-						</div>
+				<!-- Service Item: Decks -->
+				<div class="flex justify-center">
+					<div class="relative cursor-pointer service-item">
+					<img class="rounded-lg shadow-lg service-img"
+						src="images/deck-sm.jpg" 
+						alt="Decks" 
+						data-title="Decks" 
+						data-text="Our decks are built with precision and care, ensuring durability and style for your outdoor space."
+						data-images='["images/deck-sm.jpg"]'>
+					<div class="rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
+						<h1 class="py-5 text-lg md:py-20 md:text-2xl font-bold">Decks</h1>
 					</div>
-					<div class="flex justify-center">
-						<div class="relative " >
-							<img class=" rounded-lg shadow-lg" src="images/fence-sm.jpg" alt="">
-							
-							<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
-								<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Fences</h1>
-							</div>
-						</div>
 					</div>
-					<div class="flex justify-center">	
-						<div class="relative " >
-							<img class=" rounded-lg shadow-lg" src="images/kitchen-sm.jpg" alt="">
-							
-							<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
-								<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Kitchens</h1>
-							</div>
-						</div>
+				</div>
+				
+				<!-- Service Item: Fences -->
+				<div class="flex justify-center">
+					<div class="relative cursor-pointer service-item">
+					<img class="rounded-lg shadow-lg service-img"
+						src="images/fence-sm.jpg" 
+						alt="Fences" 
+						data-title="Fences" 
+						data-text="Durable and stylish fences for your home, offering both privacy and aesthetic appeal."
+						data-images='["images/fence-sm.jpg"]'>
+					<div class="rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
+						<h1 class="py-5 text-lg md:py-20 md:text-2xl font-bold">Fences</h1>
 					</div>
-					<div class="flex justify-center">
-						<div class="relative " >
-							<img class="rounded-lg shadow-lg" src="images/bathroom-sm.jpg" alt="">
-							
-							<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
-								<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Bathrooms</h1>
-							</div>
-						</div>
 					</div>
-					<div class="flex justify-center">
-						<div class="relative " >
-							<img class=" rounded-lg shadow-lg" src="images/floor-sm.jpg" alt="">
-							
-							<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
-								<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Flooring</h1>
-							</div>
-						</div>
+				</div>
+				
+				<!-- Service Item: Kitchens -->
+				<div class="flex justify-center">
+					<div class="relative cursor-pointer service-item">
+					<img class="rounded-lg shadow-lg service-img"
+						src="images/kitchen-sm.jpg" 
+						alt="Kitchens" 
+						data-title="Kitchens" 
+						data-text="Transform your kitchen into a modern, functional space that fits your style and needs."
+						data-images='["images/kitchen-sm.jpg"]'>
+					<div class="rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
+						<h1 class="py-5 text-lg md:py-20 md:text-2xl font-bold">Kitchens</h1>
 					</div>
-					<div class="flex justify-center">
-						<div class="relative " >
-							<img class=" rounded-lg shadow-lg" src="images/drywall-sm.jpg" alt="">
-							
-							<div class=" rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
-								<h1 class=" py-5 text-lg md:py-20 md:text-2xl font-bold">Drywall</h1>
-							</div>
-						</div>
 					</div>
+				</div>
+				
+				<!-- Service Item: Bathrooms -->
+				<div class="flex justify-center">
+					<div class="relative cursor-pointer service-item">
+					<img class="rounded-lg shadow-lg service-img"
+						src="images/bathroom-sm.jpg" 
+						alt="Bathrooms" 
+						data-title="Bathrooms" 
+						data-text="Redesign your bathroom with high-quality materials for comfort, style, and functionality."
+						data-images='["images/bathroom-sm.jpg"]'>
+					<div class="rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
+						<h1 class="py-5 text-lg md:py-20 md:text-2xl font-bold">Bathrooms</h1>
+					</div>
+					</div>
+				</div>
+				
+				<!-- Service Item: Flooring -->
+				<div class="flex justify-center">
+					<div class="relative cursor-pointer service-item">
+					<img class="rounded-lg shadow-lg service-img"
+						src="images/floor-sm.jpg" 
+						alt="Flooring" 
+						data-title="Flooring" 
+						data-text="Our flooring options are designed for beauty and durability, enhancing any room's aesthetic."
+						data-images='["images/floor-sm.jpg"]'>
+					<div class="rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
+						<h1 class="py-5 text-lg md:py-20 md:text-2xl font-bold">Flooring</h1>
+					</div>
+					</div>
+				</div>
+				
+				<!-- Service Item: Drywall -->
+				<div class="flex justify-center">
+					<div class="relative cursor-pointer service-item">
+					<img class="rounded-lg shadow-lg service-img"
+						src="images/drywall-sm.jpg" 
+						alt="Drywall" 
+						data-title="Drywall" 
+						data-text="Professional drywall installation for smooth, finished walls and ceilings in any room."
+						data-images='["images/drywall-sm.jpg"]'>
+					<div class="rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
+						<h1 class="py-5 text-lg md:py-20 md:text-2xl font-bold">Drywall</h1>
+					</div>
+					</div>
+				</div>
+  
 				
 				</div>
+			<!--end of Service items wrapper-->
 			</div>
+			<!-- Reusable Modal service items  -->
+			<div id="serviceModal" class="fixed inset-0 bg-black bg-opacity-80 hidden z-50 flex items-center justify-center">
+				<div class="bg-white rounded-lg shadow-lg max-w-4xl w-full p-6 relative">
+				<button id="closeModal" class="absolute top-3 right-3 text-gray-600 hover:text-black text-2xl">&times;</button>
+				<div class="flex flex-col md:flex-row">
+					<div class="w-full md:w-1/2 modal-content" >
+					<img id="modalImage" src="" alt="Service Image" class="rounded-lg shadow-lg w-full">
+					</div>
+					<div class="w-full md:w-1/2 px-4">
+					<h2 id="modalTitle" class="text-2xl font-bold mb-4"></h2>
+					<p id="modalText" class="text-gray-700 mb-6"></p>
+					<button id="modalCTA" class="px-4 py-2 bg-blue-600 text-white rounded-md">Get a Quote</button>
+					</div>
+				</div>
+				</div>
+			<!--end of reusable service item Modal-->
+			</div>
+		  
+
+
+			  
+
+
 		<!-- End of Service section-->	
 		</section>
 
@@ -914,6 +972,70 @@
 			});
 			
 		</script>
+			
 
+
+	
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+		  const serviceItems = document.querySelectorAll('.service-item');	
+		  const serviceModal = document.getElementById('serviceModal');
+		  const modalImage = document.getElementById('modalImage');
+		  const modalTitle = document.getElementById('modalTitle');
+		  const modalText = document.getElementById('modalText');
+		  const closeModal = document.getElementById('closeModal');
+		  const modalCTA = document.getElementById('modalCTA');
+	  
+		  // Debugging: Log if images are found
+		  console.log(`Found ${serviceItems.length} service items.`);
+		  console.log('Service Items:', serviceItems);
+				
+		  // Attach click event to each image
+		  serviceItems.forEach((item) => {
+			item.addEventListener('click',()=> {
+				console.log(`Attaching event to img ${item + 1}`);
+				const img = item.querySelector('img');
+				const title = img.dataset.title;
+				const text = img.dataset.text;
+				const images = JSON.parse(img.dataset.images || '[]');
+
+				// Debugging: Log modal content
+				console.log({ title, text, images });
+
+				// Populate modal
+				modalImage.src = images[0] || img.src; // Default to clicked image if no additional images
+				modalTitle.textContent = title || 'Untitled';
+				modalText.textContent = text || 'No description available';
+
+				// Show modal
+				serviceModal.classList.remove('hidden');
+			});
+		  });	
+
+
+	  
+		  // Close modal
+		  closeModal.addEventListener('click', () => {
+			console.log('Closing modal.');
+			serviceModal.classList.add('hidden');
+		  });
+	  
+		  // Scroll to contact section on CTA click
+		  modalCTA.addEventListener('click', () => {
+			console.log('CTA clicked. Scrolling to contact section.');
+			serviceModal.classList.add('hidden');
+			document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+		  });
+	  
+		  // Close modal by clicking outside the modal content
+		  serviceModal.addEventListener('click', (event) => {
+			if (event.target === serviceModal) {
+			  console.log('Clicked outside modal content.');
+			  serviceModal.classList.add('hidden');
+			}
+		  });
+		});
+	  </script>
+	  
 	</body>
 </html>
