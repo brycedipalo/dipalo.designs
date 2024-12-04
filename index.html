@@ -12,7 +12,7 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 		<link rel="manifest" href="favicon/site.webmanifest">
 		<!--/favicon--> 
-		<title>Trubuild Construction - Penticton BC - Home Renovation Services</title>
+		<title>Trubuild Construction - Penticton BC - Home Renovation</title>
 		<!--font awsome-->
 		<script src="https://kit.fontawesome.com/4f4f3b0c03.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -21,33 +21,20 @@
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-		
-
 		<!--AOS  -->	
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-		<script>
-			AOS.init({
-				delay: 200, // values from 0 to 3000, with step 50ms
-				duration: 1500, // values from 0 to 3000, with step 50ms
-				once: false, // whether animation should happen only once - while scrolling down
-				mirror: false, // whether elements should animate out while scrolling past them
-				anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-			});
-		</script>
-
 		<!-- Google Fonts-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700;800&display=swap" rel="stylesheet">
 	    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-
 	   <style>
 		body, html {
 			margin: 0;
 			padding: 0;
 		}
+		/* Swiper Photo Slider Styling */
 		/* Adjust the size of navigation buttons */
 		.swiper-button-next,
 		.swiper-button-prev {
@@ -61,26 +48,19 @@
 		#fullscreenModal {
 			overflow: hidden;
 		}
-
-
+		/* page fonts */
 		.font-roboto { font-family: 'Roboto', sans-serif;}
-		.font-montserrat, body, h1, h2, h3, h4, h5, h6, li {font-family: 'Montserrat', 'Poppins' 'Roboto',  'Segoe UI', sans-serif, Arial, Helvetica;}
-		
-
-
-		
-		
+		.font-montserrat, body, h1, h2, h3, h4, h5, h6, li {font-family: 'Montserrat', 'Poppins' 'Roboto',  'Segoe UI', sans-serif, Arial, Helvetica;
+		/* Hero Image with adjusted resolution/file sizes for faster loading on smaller screens. */
 		#HeroImage {
 			background-image: url('images/blueprints.jpg');
 
 		}
-
 		@media (max-width: 1920px) {
 			#HeroImage {
 			background-image: url('images/blueprints-2000.jpg');
 			}
 		}
-
 		@media (max-width: 768px) {
 			#HeroImage {
 			background-image: url('images/blueprints-1000.jpg');
@@ -89,16 +69,11 @@
 			#GoogleReviewImgs img {
 				width:300px;
 			}
-
 		}
-
 		</style>
-				
-						
-		
-		  
 	</head>
 	<body class="text-gray-800 antialiased ">
+		<!--Animated Loading Image-->
 		<div id="loader" class="fixed inset-0 bg-white flex justify-center items-center z-50">
 			<div class="animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-blue-500"></div>
 		</div>
@@ -106,7 +81,6 @@
 		<div class="relative hidden" id="content">	
 			<!-- Hero Image Section -->
 			<div id="HeroImage" class= "h-screen bg-cover bg-center";">
-			
 				<!--Hero Image Cover -->
 				<div id="home" class= "h-screen bg-cover bg-center bg-black bg-opacity-20 flex-col" >
 					<!-- Header positioned absolutely on top of the background -->
@@ -129,22 +103,25 @@
 											<i class="fa-regular fa-envelope"></i>
 											trubuildcon@gmail.com
 										</a>
+										<!--Location info container on top header hidden on smalls screens-->
 										<div class="hidden md:inline-block text-sm font-semibold leading-relaxed inline-block mr-4 py-2 whitespac e-nowrap text-white">
 											<i class="fa-solid fa-location-dot"></i>
 											Penticton BC
 										</div>
-
 									<!--end of left side contact info-->
 									</div>
 								<!--end of contact info container, left side of top header -->
 								</div>
 								<!-- Socials Container, right side of top header -->
 								<div class="flex flex-grow items-center bg-transparent shadow-none ">
+									<!--Location info container on bottom header visible on small screens-->
 									<div class="md:hidden inline-block text-sm font-semibold leading-relaxed inline-block mr-4 py-2 whitespac e-nowrap text-white">
 										<i class="fa-solid fa-location-dot"></i>
 										Penticton BC
-									</div>			
+									</div>
+									<!--list of social media links-->
 									<ul class="flex flex-row list-none ml-auto">
+										<!--facebook link-->
 										<li class="flex items-center">
 											<a class="px-3 pl-0 md:px-3 lg:py-4 sm:py-2 flex items-center text-xs uppercase font-bold hover:text-gray-300" 
 											target="_blank" rel="noopener noreferrer"
@@ -153,13 +130,13 @@
 												<span class="hidden md:inline-block ml-2">Like</span>
 											</a>
 										</li>
-
+										<!-- instagram link-->
 										<li class="flex items-center">
 											<a class="px-3 lg:py-4 sm:py-2 flex items-center text-xs uppercase font-bold hover:text-gray-300" 
 											target="_blank" rel="noopener noreferrer"
 											href="https://brycedipalo.github.io/RoboJoker/">
 												<i class=" fab fa-instagram text-lg leading-lg"></i>
-												<span class="hidden md:inline-block ml-2">Share</span>
+												<span class="hidden md:inline-block ml-2">Follow</span>
 											</a>
 										</li>
 									</ul>	
@@ -172,9 +149,9 @@
 						<!-- lower header with logo and nav menu backgorund -->
 						<div class=" bg-black bg-opacity-50 ">
 								<!-- flex container with logo and navigation -->	
-								<nav class="flex flex-row items-center justify-between px-2 py-3">						
+								<nav class="flex flex-row items-center justify-between px-2 py-3">
+									<!--Logo Container on lower heading left side-->
 									<div id="logoDiv" class="ml-2 flex flex-row items-center">
-
 										<!--logo with link-->
 										<a  class="cursor-pointer">
 											<img onclick="NewIconImg()" 
@@ -185,13 +162,15 @@
 											id="HeroLogo"
 											>
 										</a>
+										<!--Logo Title Words right of image-->
 										<div id="LogoWords" class="hidden pl-2 flex flex-col text-black">
 											<h3 class="text-xl font-bold ">TRUBUILD</h3>
 											<h4 class="pb-1 text-md font-bold text-center">Construction</h4>
 										</div>
-									</div>						
+									<!--End of Logo container-->
+									</div>	
 									<!--  navigation-->
-									<!-- Mobile menu button and Desktop Nav-->
+									<!-- Mobile menu button and Desktop Nav container-->
 									<div class="mr-4"> 
 										<!-- Mobile menu butotn -->
 										<button
@@ -223,9 +202,8 @@
 								</div>
 						<!-- end of lower header background container-->							
 						</div>					
-						<!--Background Content ontop of image, the real hero section technically still in the header so it does not overlap-->
+						<!--Background Content ontop of Hero image, the real hero section technically still in the header so it does not overlap-->
 						<div id="HeroContent" class="m-2 flex flex-col items-center justify-center text-white ">
-							
 							<h1 class="font-semibold text-2xl pt-5 md:pt-20 xl:pt-5 md:text-5xl mt-8 md:mt-16"  data-aos="fade-up">Your vision starts with us.</h1>
 							<h2 style="font-weight:semibold;" class="text-xl pt-10 md:text-2xl md:pt-20 xl:pt-10" data-aos="fade-right" data-aos-delay="1000">High Quality Renovations</h2>
 							<h2 style="font-weight:semibold;" class="text-xl md:text-2xl" data-aos="fade-right" data-aos-delay="1000">Trusted Professionals</h2>
@@ -261,7 +239,6 @@
 				<!-- Container for Top Part of About us for large displays image, logo, paragraphs -->
 				<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between pt-20">
 					<!-- Image Container for About us -->
-
 					<div class="lg:w-1/2 p-2 " data-aos="flip-right">
 					<img
 						alt="Home renovation worker"
@@ -269,9 +246,9 @@
 						src="images/About-us.jpg"
 					/>
 					</div>
-					<!-- container for right side on large display to keep first p below logo and next to img-->
+					<!-- container for About us Content and Logo. Right side on large display to keep first p below logo and next to the About us img-->
 					<div class="lg:items-start p-5 "data-aos="fade-in" data-aos-delay="1000">  
-						<!-- Title Block with logo-->
+						<!-- Title Block with logo container-->
 						<div class="flex items-end">
 							<img
 							id="AboutLogo"
@@ -284,7 +261,7 @@
 								<h4 class="pb-4 text-center">Construction</h4>
 							</div>
 						</div>
-						<!--Wrapper for paragraphs in about us-->
+						<!--Wrapper for content paragraphs in about us-->
 						<div class=" mt-4 text-lg leading-relaxed text-gray-600">
 							<p class="max-w-lg">
 								Founded with a commitment to quality craftsmanship and reliable service,
@@ -292,6 +269,7 @@
 								tailored to bring your vision to life. With expertise in decks, fences,
 								flooring, drywall installation and finishing, exterior siding, as well as
 								windows and doors, we’re here to enhance your home with precision and care.
+								<!--Buttons to Dispaly and hide content below for smaller screens-->
 								<button
 								id="KeepReading"
 								class="text-blue-600 underline md:hidden cursor-pointer focus:outline-none"
@@ -313,13 +291,13 @@
 								refreshing a single room or transforming your outdoor spaces, Trubuild Construction 
 								is ready to make your home renovation smooth, efficient, and rewarding.
 							</p>
-						<!--end of wrapper for paragraphs in about us-->
+						<!--end of wrapper for content paragraphs in about us-->
 						</div>
 					<!--end of container for right side on large displays to position p below logo and next img-->				
 					</div>
 				<!--end of container for top part of about us for large displays image, logo,paragraphs-->
 				</div>
-				<!--Star List container -->
+				<!--Star List container at bottom of About us -->
 				<div class="px-5 lg:px-24" data-aos="fade-bottom" >
 					<ul class="list-none mt-6 lg:flex lg:flex-row">
 						<li class="py-2">
@@ -354,19 +332,14 @@
 								</div>
 							</div>
 						</li>
-					</ul>
-				<!--end of starlist container-->								
+					</ul>								
+				<!-- End of Star list container at bottom of About us section-->	
 				</div>
-				<!-- map with reviews
-					<iframe 
-					src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d663930.9390331625!2d-120.1374166!3d49.4565401!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa78c032ea1793e09%3A0xd8af7959e29369e1!2sTruBuild%20Construction!5e0!3m2!1sen!2sca!4v1732844732860!5m2!1sen!2sca" 
-					width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-					-->
-				
-
-
-		</div>
-	
+					<!-- map with reviews
+						<iframe 
+						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d663930.9390331625!2d-120.1374166!3d49.4565401!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa78c032ea1793e09%3A0xd8af7959e29369e1!2sTruBuild%20Construction!5e0!3m2!1sen!2sca!4v1732844732860!5m2!1sen!2sca" 
+						width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					-->	
 			<!-- end of about us wrapper section-->	
 			</div>
 		<!-- end of About us section-->			
@@ -379,166 +352,165 @@
 					<polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
 				</svg>
 			</div>
-
-			<!-- Service items wrapper-->
+			<!-- Service heading and Items wrapper-->
 			<div class="p-10 flex flex-col items-center">
 				<h3 class="pb-4 text-2xl font-semibold text-black">Solutions for Your Home</h3>
-				<!--Service section wrapper-->			
-				<div  class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center mx-auto lg:w-10/12" >
-					
-				<!-- Service Item: Decks -->
-				<div class="flex justify-center">
-					<div class="relative cursor-pointer service-item">
-					<img class="rounded-lg shadow-lg service-img"
-						src="images/deck-sm.jpg" 
-						alt="Decks" 
-						data-title="Decks" 
-						data-text=
-						"Our decks are expertly designed to enhance your outdoor living space. We use high-quality materials and skilled craftsmanship to build sturdy and beautiful decks that are perfect for relaxing, entertaining, or enjoying the view. Whether you need a small patio deck or a large, multi-level deck, we have the experience and expertise to bring your vision to life. Choose from various styles, including traditional wood, composite, and modern metal, to fit your unique taste and needs."
-						
-						data-images='["images/deck-sm.jpg"]'>
-					<div class="rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
-						<h1 class="py-5 text-lg md:py-20 md:text-2xl font-bold">Decks</h1>
+				<!--Service Items wrapper-->			
+				<div  class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center mx-auto lg:w-10/12" >			
+					<!-- Service Item: Decks -->
+					<div class="flex justify-center">
+						<!-- Image and Service Item title wrapper-->
+						<div class="relative cursor-pointer service-item">
+							<img class="rounded-lg shadow-lg service-img"
+								src="images/deck-sm.jpg" 
+								alt="Decks" 
+								data-title="Decks" 
+								data-text=
+								"Our decks are expertly designed to enhance your outdoor living space. We use high-quality materials and skilled craftsmanship to build sturdy and beautiful decks that are perfect for relaxing, entertaining, or enjoying the view. Whether you need a small patio deck or a large, multi-level deck, we have the experience and expertise to bring your vision to life. Choose from various styles, including traditional wood, composite, and modern metal, to fit your unique taste and needs."
+								data-images='["images/deck-sm.jpg"]'>
+							<!--Image Overlay -->
+							<div class="rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
+								<h1 class="py-5 text-lg md:py-20 md:text-2xl font-bold">Decks</h1>
+							</div>
+						<!--End of iamge and heading -->
+						</div>
+					<!--End of Service Item: Decks1-->
+					</div>		
+					<!-- Service Item: Fences -->
+					<div class="flex justify-center">
+						<div class="relative cursor-pointer service-item">
+							<img class="rounded-lg shadow-lg service-img"
+								src="images/fence-sm.jpg" 
+								alt="Fences" 
+								data-title="Fences" 
+								data-text=
+								"From privacy to security, we provide custom fence installations designed to suit your property and lifestyle. Whether you need a wooden fence for privacy, a decorative iron fence for curb appeal, or a durable vinyl fence for low maintenance, we have the perfect solution for you. Our fences are built to last and are crafted with attention to detail, ensuring they complement the aesthetics of your home while providing the functionality you need."
+								data-images='["images/fence-sm.jpg"]'>
+							<div class="rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
+								<h1 class="py-5 text-lg md:py-20 md:text-2xl font-bold">Fences</h1>
+							</div>
+						</div>
+					<!-- End of Service Item: Fences -->
 					</div>
+					<!-- Service Item: Kitchens -->
+					<div class="flex justify-center">
+						<div class="relative cursor-pointer service-item">
+							<img class="rounded-lg shadow-lg service-img"
+								src="images/kitchen-sm.jpg" 
+								alt="Kitchens" 
+								data-title="Kitchens" 
+								data-text=
+								"A kitchen is the heart of any home, and we specialize in designing and building functional, stylish, and personalized kitchen spaces. Whether you are renovating an existing kitchen or starting from scratch, we will work with you to create a space that fits your needs and taste. From custom cabinetry to high-end appliances, we focus on quality craftsmanship, modern design, and maximizing your kitchen’s potential to suit both everyday use and entertaining."
+								data-images='["images/kitchen-sm.jpg"]'>
+							<div class="rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
+								<h1 class="py-5 text-lg md:py-20 md:text-2xl font-bold">Kitchens</h1>
+							</div>
+						</div>
+					<!-- End of Service Item: Kitchens-->
+					</div>					
+					<!-- Service Item: Bathrooms -->
+					<div class="flex justify-center">
+						<div class="relative cursor-pointer service-item">
+							<img class="rounded-lg shadow-lg service-img"
+								src="images/bathroom-sm.jpg" 
+								alt="Bathrooms" 
+								data-title="Bathrooms" 
+								data-text=
+								"Transform your bathroom into a spa-like retreat with our expert remodeling services. We offer a wide range of solutions, including complete bathroom overhauls, modern shower installations, custom vanities, and elegant tile work. Whether you're looking to create a relaxing atmosphere with a freestanding tub or need a functional family bathroom, we bring both style and functionality to every project. Trust our team to deliver a bathroom that enhances your comfort and home value."
+								data-images='["images/bathroom-sm.jpg"]'>
+							<div class="rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
+								<h1 class="py-5 text-lg md:py-20 md:text-2xl font-bold">Bathrooms</h1>
+							</div>
+						</div>
+					<!-- End of Service Item: bathrooms -->
+					</div>					
+					<!-- Service Item: Flooring -->
+					<div class="flex justify-center">
+						<div class="relative cursor-pointer service-item">
+							<img class="rounded-lg shadow-lg service-img"
+								src="images/floor-sm.jpg" 
+								alt="Flooring" 
+								data-title="Flooring" 
+								data-text=
+								"Flooring sets the tone for the entire room, and we provide a range of flooring options to suit any style, budget, or space. From hardwood to tile, laminate to carpet, we have the materials and expertise to install the perfect floor for your home. Whether you're renovating a single room or your entire house, our flooring solutions are designed to be durable, attractive, and easy to maintain. We offer expert installation and help you choose the best flooring based on your needs and preferences."
+								data-images='["images/floor-sm.jpg"]'>
+							<div class="rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
+								<h1 class="py-5 text-lg md:py-20 md:text-2xl font-bold">Flooring</h1>
+							</div>
+						</div>
+					<!-- End of Service Item: Flooring -->
+					</div>					
+					<!-- Service Item: Drywall -->
+					<div class="flex justify-center">
+						<div class="relative cursor-pointer service-item">
+							<img class="rounded-lg shadow-lg service-img"
+								src="images/drywall-sm.jpg" 
+								alt="Drywall" 
+								data-title="Drywall" 
+								data-text=
+								"Drywall is a key component of any construction or renovation project, and our team specializes in high-quality drywall installation and finishing. We work with precision to ensure smooth, flawless walls and ceilings that are ready for paint or finishing touches. Whether you’re building a new home, remodeling a room, or need drywall repairs, we handle every job with care. Our services include installation, patching, texturing, and seamless finishing, all done to the highest standards of craftsmanship."
+								data-images='["images/drywall-sm.jpg"]'>
+							<div class="rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
+								<h1 class="py-5 text-lg md:py-20 md:text-2xl font-bold">Drywall</h1>
+							</div>
+						</div>
+					<!-- End of Service Item: Drywall-->
 					</div>
+				<!--End of Service Items Wrapper -->				
 				</div>
-				
-				<!-- Service Item: Fences -->
-				<div class="flex justify-center">
-					<div class="relative cursor-pointer service-item">
-					<img class="rounded-lg shadow-lg service-img"
-						src="images/fence-sm.jpg" 
-						alt="Fences" 
-						data-title="Fences" 
-						data-text=
-						"From privacy to security, we provide custom fence installations designed to suit your property and lifestyle. Whether you need a wooden fence for privacy, a decorative iron fence for curb appeal, or a durable vinyl fence for low maintenance, we have the perfect solution for you. Our fences are built to last and are crafted with attention to detail, ensuring they complement the aesthetics of your home while providing the functionality you need."
-						data-images='["images/fence-sm.jpg"]'>
-					<div class="rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
-						<h1 class="py-5 text-lg md:py-20 md:text-2xl font-bold">Fences</h1>
-					</div>
-					</div>
-				</div>
-				
-				<!-- Service Item: Kitchens -->
-				<div class="flex justify-center">
-					<div class="relative cursor-pointer service-item">
-					<img class="rounded-lg shadow-lg service-img"
-						src="images/kitchen-sm.jpg" 
-						alt="Kitchens" 
-						data-title="Kitchens" 
-						data-text=
-						"A kitchen is the heart of any home, and we specialize in designing and building functional, stylish, and personalized kitchen spaces. Whether you are renovating an existing kitchen or starting from scratch, we will work with you to create a space that fits your needs and taste. From custom cabinetry to high-end appliances, we focus on quality craftsmanship, modern design, and maximizing your kitchen’s potential to suit both everyday use and entertaining."
-						data-images='["images/kitchen-sm.jpg"]'>
-					<div class="rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
-						<h1 class="py-5 text-lg md:py-20 md:text-2xl font-bold">Kitchens</h1>
-					</div>
-					</div>
-				</div>
-				
-				<!-- Service Item: Bathrooms -->
-				<div class="flex justify-center">
-					<div class="relative cursor-pointer service-item">
-					<img class="rounded-lg shadow-lg service-img"
-						src="images/bathroom-sm.jpg" 
-						alt="Bathrooms" 
-						data-title="Bathrooms" 
-						data-text=
-						"Transform your bathroom into a spa-like retreat with our expert remodeling services. We offer a wide range of solutions, including complete bathroom overhauls, modern shower installations, custom vanities, and elegant tile work. Whether you're looking to create a relaxing atmosphere with a freestanding tub or need a functional family bathroom, we bring both style and functionality to every project. Trust our team to deliver a bathroom that enhances your comfort and home value."
-						data-images='["images/bathroom-sm.jpg"]'>
-					<div class="rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
-						<h1 class="py-5 text-lg md:py-20 md:text-2xl font-bold">Bathrooms</h1>
-					</div>
-					</div>
-				</div>
-				
-				<!-- Service Item: Flooring -->
-				<div class="flex justify-center">
-					<div class="relative cursor-pointer service-item">
-					<img class="rounded-lg shadow-lg service-img"
-						src="images/floor-sm.jpg" 
-						alt="Flooring" 
-						data-title="Flooring" 
-						data-text=
-						"Flooring sets the tone for the entire room, and we provide a range of flooring options to suit any style, budget, or space. From hardwood to tile, laminate to carpet, we have the materials and expertise to install the perfect floor for your home. Whether you're renovating a single room or your entire house, our flooring solutions are designed to be durable, attractive, and easy to maintain. We offer expert installation and help you choose the best flooring based on your needs and preferences."
-						data-images='["images/floor-sm.jpg"]'>
-					<div class="rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
-						<h1 class="py-5 text-lg md:py-20 md:text-2xl font-bold">Flooring</h1>
-					</div>
-					</div>
-				</div>
-				
-				<!-- Service Item: Drywall -->
-				<div class="flex justify-center">
-					<div class="relative cursor-pointer service-item">
-					<img class="rounded-lg shadow-lg service-img"
-						src="images/drywall-sm.jpg" 
-						alt="Drywall" 
-						data-title="Drywall" 
-						data-text=
-						"Drywall is a key component of any construction or renovation project, and our team specializes in high-quality drywall installation and finishing. We work with precision to ensure smooth, flawless walls and ceilings that are ready for paint or finishing touches. Whether you’re building a new home, remodeling a room, or need drywall repairs, we handle every job with care. Our services include installation, patching, texturing, and seamless finishing, all done to the highest standards of craftsmanship."
-						data-images='["images/drywall-sm.jpg"]'>
-					<div class="rounded-lg shadow-lg w-full absolute inset-0 flex justify-center bg-black bg-opacity-50 text-white">
-						<h1 class="py-5 text-lg md:py-20 md:text-2xl font-bold">Drywall</h1>
-					</div>
-					</div>
-				</div>
-  
-				
-				</div>
-			<!--end of Service items wrapper-->
+			<!--end of Heading Container with Service items wrapper -->
 			</div>
-			<!-- Reusable Modal service items  -->
+			<!-- full screen Modal- activated on click - reusable for each service item - opac background container -->
 			<div id="serviceModal" class="fixed inset-0 bg-black bg-opacity-80 hidden z-50 flex items-center justify-center">
-				<div class="bg-white rounded-lg shadow-lg max-w-4xl w-full p-6 relative">
-				<button id="closeModal" class="absolute top-3 right-3 text-gray-600 hover:text-black text-2xl">&times;</button>
-				<div class="flex flex-col md:flex-row">
-					<div class="modal-content" >
-						<img id="modalImage" src="" alt="Service Image" class="rounded-lg shadow-lg">
+				<!--Modal Content Background-->
+				<div class="bg-white rounded-lg shadow-lg max-w-4xl w-full p-6 relative overflow-y-auto max-h-screen">
+					<!-- Close button-->
+					<button id="closeModal" class="absolute top-3 right-3 text-gray-600 hover:text-black text-2xl">&times;</button>
+					<!--Container for modal Image with Headings with content-->
+					<div class="flex flex-col md:flex-row">
+						<!--modal Image container -->
+						<div class="modal-content" >
+							<img id="modalImage" src="" alt="Service Image" class="rounded-lg shadow-lg">
+						</div>
+						<!--modal Heading and Content Container -->
+						<div class="w-full md:w-1/2 px-4">
+							<h2 id="modalTitle" class="text-2xl font-bold mb-4"></h2>
+							<p id="modalText" class="text-gray-700 mb-6"></p>
+							<!--CTA button-->
+							<button id="modalCTA" class="px-4 py-2 bg-blue-600 text-white rounded-md">Start Your Dream Project Now!</button>
+						<!--end of modal heading and Content container-->
+						</div>
+					<!-- end of container for modal image with headings with content-->
 					</div>
-					<div class="w-full md:w-1/2 px-4">
-						<h2 id="modalTitle" class="text-2xl font-bold mb-4"></h2>
-						<p id="modalText" class="text-gray-700 mb-6"></p>
-						<button id="modalCTA" class="px-4 py-2 bg-blue-600 text-white rounded-md">Start Your Dream Project Now!</button>
-					</div>
-				</div>
+				<!-- end of Modal Content Background-->
 				</div>
 			<!--end of reusable service item Modal-->
 			</div>
-		  
-
-
-			  
-
-
 		<!-- End of Service section-->	
 		</section>
-
-		<!-- Start Photo WHeel section--> 
-		<section id="gallery" 
-			class="p-10 pb-20 flex flex-col items-center lg:pb-60">
-
+		<!-- Start Photo WHeel, Gallery, and Google Review section with scripts--> 
+		<section id="gallery" class="p-10 pb-20 flex flex-col items-center lg:pb-60">
 			<h2 class="pb-4 text-2xl font-semibold text-black">See the Difference</h2>
-			<!-- photo wheel  -->
+			<!-- photo wheel container with script-->
 			<div class=" flex items-center justify-center shadow-lg overflow-hidden">
-
 				<!-- Swiper Container -->
 				<div class="swiper w-full max-w-xs mx-auto sm:max-w-lg lg:max-w-3xl h-auto sm:px-0" >
-				  <div id="swiperWrapper" class="swiper-wrapper">
+				  <!--Swiper slider-->
+				  <div id="swiperWrapper" class="swiper-wrapper cursor-pointer">
 					<!-- Slides will be dynamically injected -->
 				  </div>
-			  
-				  <!-- Navigation Buttons -->
+				  <!-- Swiper Navigation Buttons -->
 				  <div class="swiper-button-next"></div>
 				  <div class="swiper-button-prev"></div>
 				  <div class="swiper-pagination"></div>
 				</div>
 			  
-				<!-- Fullscreen Modal -->
+				<!-- Fullscreen Modal for Photo wheel when image is clicked-->
 				<div id="fullscreenModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50">
 				  <button id="closeFullscreen" class="absolute top-5 right-5 text-white text-2xl">&times;</button>
 				  <img id="fullscreenImage" src="" alt="Fullscreen" class="max-w-full max-h-full mx-auto rounded-lg">
 				</div>
-			  
+				<!-- Photo Wheel Script-->
 				<script>
 				  // Dynamically generate the image list
 				  const imageFolder = 'images/gallery/';
@@ -598,36 +570,35 @@
 					}
 				  });
 				</script>
-			<!--end of photowheel container-->
+			<!--end of photowheel container including script-->
 			</div>
-
 			<!-- Link to Open Gallery -->
 			<div class="text-center my-8">
 				<button id="openGallery" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
 				Open Photo Gallery
 				</button>
 			</div>
-
-			<!-- Fullscreen Gallery Modal -->
+			<!-- Fullscreen Modal with opac background for Gallery grid with with close button-->
 			<div id="galleryModal" class="fixed inset-0 bg-black bg-opacity-90 hidden flex items-center justify-center z-50 overflow-auto">
+				<!--Gallery Container for photo grid and close button-->
 				<div class="relative w-full max-w-5xl p-4 max-h-screen overflow-auto">
-
-				<button id="closeGallery" class="absolute top-4 right-4 text-white text-2xl">&times;</button>
-				
-				<!-- Photo Grid -->
-				<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-					<!-- Photos will be dynamically injected -->
+					<!--Close button 'X' for photo gallery-->
+					<button id="closeGallery" class="absolute top-4 right-4 text-white text-4xl">&times;</button>
+					<!-- Photo Grid Gallery-->
+					<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+						<!-- Photos will be dynamically injected -->
+					</div>
+				<!-- end of Gallery Container for photo grid and close button-->
 				</div>
-				</div>
+			<!-- end of Fullscreen Modal with opac background for Gallery grid -->
 			</div>
-			
-
-			<!-- Fullscreen Photo Modal -->
+			<!-- Fullscreen Photo Modal with opac-bg for gallery images clicked -->
 			<div id="photoModal" class="fixed inset-0 bg-black bg-opacity-90 hidden flex items-center justify-center z-50">
+				<!--close button 'x'-->
 				<button id="closePhotoModal" class="absolute top-4 right-4 text-white text-2xl">&times;</button>
 				<img id="photoModalImage" src="" alt="Fullscreen Photo" class="max-w-full max-h-full rounded-lg">
 			</div>
-
+			<!-- Photo Gallery Script-->
 			<script>
 				// Gallery Modal Elements
 				const galleryModal = document.getElementById('galleryModal');
@@ -681,32 +652,24 @@
 				});
 			// End of Photo Gallery
 			</script>
-			
-			
-			
-
-
 			<!-- Google reviews container-->
 			<div class="flex flex-col items-center pt-20">
+				<!--Image Container - centered-->
 				<div class="pb-2 flex justify-center">
 					<img src="images/verified-reviews.jpg"
 					alt="verified-google-reviews"
 					width="137px"
 					>
 				</div>
-			<!-- Review Container. add classes when more than 1 review-->
-			<div id="GoogleReviewImgs" class="">
-
-				<img src="images/Google Review1.jpg"
-				alt="Google review"
-				class="rounded-lg shadow-lg"
-				
-				>
-			</div>
-
-			
-			
-			
+				<!-- Review Container. add classes when more than 1 review-->
+				<div id="GoogleReviewImgs" class="">
+					<img src="images/Google Review1.jpg"
+					alt="Google review"
+					class="rounded-lg shadow-lg"				
+					>
+				</div>
+			<!--end of Google review container-->
+			</div>			
 		<!--end of gallery section-->		
 		</section>
 		<!--Contact us section -->
@@ -719,6 +682,7 @@
 			</div>
 			<!-- Contact Us Section wrapper-->
 			<div class="container mx-auto px-4">
+				<!--Contact Us Title Container-->
 				<div class="flex flex-wrap text-center justify-center">
 					<div class="w-full lg:w-6/12 px-4">
 						<h2 class="text-4xl font-semibold text-white">Build something</h2>
@@ -727,14 +691,13 @@
 						</p>
 					</div>
 				</div>
-<!-- Form submit code example.>
-	<form action="https://formsubmit.co/your@email.com" method="POST">
-		<input type="text" name="name" required>
-		<input type="email" name="email" required>
-		<button type="submit">Send</button>
-	</form>
--->
-
+				<!-- Form submit code example.>
+					<form action="https://formsubmit.co/your@email.com" method="POST">
+						<input type="text" name="name" required>
+						<input type="email" name="email" required>
+						<button type="submit">Send</button>
+					</form>
+				-->
 				<!--Contact Form-->		
 				<form action="https://formsubmit.co/8451044cd0f1200bdd1513845448b82d" method="POST">			
 					<div class="flex flex-wrap justify-center pt-8" data-aos="fade-in">
@@ -788,7 +751,9 @@
 						</div>
 					</div>
 				</form>
+			<!--end of Contact us section wrapper with Title and form -->
 			</div>
+		<!--end of contact us section-->	
 		</section>
 		<footer class="relative bg-gray-300 pt-8 pb-6">
 			<div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px;">
@@ -796,15 +761,19 @@
 					<polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
 				</svg>
 			</div>
+			<!--entire footer container -->
 			<div class="container mx-auto px-4">
+				<!-- Container for Socials /w headings and grouped links and contact info containers -->
 				<div class="flex flex-wrap md:justify-center">
-					<!-- Socials container-->
+					<!--container for Socials with Headings for footer-->
 					<div class=" lg:w-1/2 px-4 pb-10">
 						<h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
 						<h5 class="text-lg mt-0 mb-2 text-gray-700">
 							check us out on these platforms
 						</h5>
+						<!-- Social Icon link Containers-->
 						<div class="mt-6">
+							<!--facebook link-->
 							<a 
 								target="_blank" rel="noopener noreferrer"
 								href="https://www.facebook.com/profile.php?id=61567496781817" >
@@ -812,6 +781,7 @@
 								<i class="flex fab fa-facebook-square"></i>
 								</button>
 							</a>
+							<!-- Insta link-->
 							<a 
 								target="_blank" rel="noopener noreferrer"
 								href="https://brycedipalo.github.io/RoboJoker/">
@@ -819,17 +789,15 @@
 									<i class="flex fab fa-instagram"></i>
 								</button>
 							</a>
-							<!-- 
-								<button class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button">
-									<i class="flex fab fa-github"></i>
-							-->
-							</button>
+						<!--end of Container for Socials Icon links-->	
 						</div>
+					<!-- end of Socials Container with headings for footer-->
 					</div>
-					<!-- Container for links and contact info-->
+					<!-- Container to group links and contact info together in footer-->
 					<div class="w-full lg:w-1/2 px-4">
+						<!-- Container for usefull links and contact info in footer used to stack by column on small screens and rows on large -->
 						<div class="flex flex-col md:flex-row mb-6">
-							<!-- Links container-->
+							<!-- useful Links container-->
 							<div class="w-full px-4 pb-6 flex flex-col">
 								<div class="">
 									<span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Useful Links</span>
@@ -856,8 +824,9 @@
 										</li>
 									</ul>
 								</div>
+							<!-- end of useful links container-->
 							</div>
-							<!-- Contact us container-->
+							<!-- Contact us container in footer-->
 							<div class="w-full px-4 flex flex-col">
 								<span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Contact us</span>
 								<ul class="list-unstyled">
@@ -881,11 +850,15 @@
 									</li>
 									
 								</ul>
+							<!--end of contact us container in footer-->
 							</div>
+						<!--end of Container for useful links and contact info in footer-->
 						</div>
+					<!-- End of container for links and contact info -->
 					</div>
-
+				<!-- End of Container for socials w/ headings and grouped links and contact info containers -->
 				</div>
+				<!-- Author Section-->
 				<hr class="my-6 border-gray-400" />
 				<div class="flex flex-col items-center md:justify-between justify-center">
 					<div class="w-full md:w-4/12 px-4 mx-auto text-center">
@@ -899,54 +872,51 @@
 							</a>
 						</div>
 					</div>
+				<!--end of Author section-->
 				</div>
+			<!-- end of footer container-->
 			</div>
-		</footer>
-
-	
+		</footer>	
 		<!-- AOS-->
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" ></script>
-		<!--
-		<link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
-		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-		    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-			  
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-	-->
-
-
-		<!-- Nav --->
-		<script>
-			
+		<script>			
+			//Nav Menu display for small screens 
 			function toggleNavmenu() {
 			document.getElementById('navmenu').classList.toggle("hidden");
 			document.getElementById('navmenu').classList.toggle("flex,justify-end");
+			//hide hero content on menu drop down
 			document.getElementById('HeroContent').classList.toggle("hidden");
-			
 			}
+
+			//About us section expand button -Keep Reading / Show Less.
 			function toggleReadMore(Id) {
+				//hide buttons on large screens 
 				document.getElementById(Id).classList.toggle("hidden");
 				document.getElementById(Id).classList.toggle("flex");
+				//show more / keep reading button
 				document.getElementById('KeepReading').classList.toggle("hidden");
+				//Showless button
 				document.getElementById('Hide').classList.toggle("hidden");
 			}
-			
+
+			//switch page logos by clicking on heading logo
 			let imgIndex =0; // used to track the current image
 
-			//Array of image Urls
+			//Array of image Urls for header logo
 			const HeaderImageList = [
 				'images/trubuild-rectangle-logo-555x1500.jpg',
 				'images/trubuildlogo-100.png',
 				'images/trubuildlogo-round-orange.png',				
 			];
 
-			//Array of image Urls
+			//Array of image Urls for about us logo
 			const AboutImageList = [
 				'images/Round-logo.png',
 				'images/trubuildlogo-round-orange.png',
 				'images/trubuildlogo-round-orange.png'				
 			];
 
+			//	change logos when clicked on main logo
 			function NewIconImg(){
 				imgIndex = (imgIndex +1) % HeaderImageList.length;
 				document.getElementById('HeroLogo').src = HeaderImageList[imgIndex];
@@ -963,7 +933,9 @@
 				
 			}
 			NewIconImg();
-
+		</script>
+		<script>	
+			//display spinning page loader until page loads then load AOS
 			window.addEventListener('load', () => {
 				document.getElementById('loader').style.display = 'none';
 				document.getElementById('content').classList.remove('hidden');
@@ -975,15 +947,11 @@
 					anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 				});
-				
-			});
-			
+			});			
 		</script>
-			
 
-
-	
-	<script>
+		<script>
+			//Service Items Modal
 		document.addEventListener('DOMContentLoaded', () => {
 		  const serviceItems = document.querySelectorAll('.service-item');	
 		  const serviceModal = document.getElementById('serviceModal');
@@ -1000,9 +968,6 @@
 				const title = img.dataset.title;
 				const text = img.dataset.text;
 				const images = JSON.parse(img.dataset.images || '[]');
-
-				// Debugging: Log modal content
-				console.log({ title, text, images });
 
 				// Populate modal
 				modalImage.src = images[0] || img.src; // Default to clicked image if no additional images
@@ -1035,7 +1000,6 @@
 			}
 		  });
 		});
-	  </script>
-	  
+	  </script>  
 	</body>
 </html>
